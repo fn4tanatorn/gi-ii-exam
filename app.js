@@ -1,6 +1,7 @@
 (() => {
   const LETTERS = "ABCDEFGH";
   const SCORE_KEY = "gi2exam.totalScore";
+  const PROGRESS_KEY = "gi2exam.progress";
   const questions = window.QUESTIONS || [];
 
   const $ = (id) => document.getElementById(id);
@@ -10,6 +11,7 @@
     case: document.querySelector(".case"),
     frame: $("figureFrame"),
     caption: $("figCaption"),
+    eyebrow: $("eyebrow"),
     question: $("question"),
     options: $("options"),
     feedback: $("feedback"),
@@ -24,6 +26,22 @@
   let answered = false;
   let sessionCorrect = 0;
   let total = loadScore();
+
+  function loadProgress() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(PROGRESS_KEY));
+      if (raw && Number.isInteger(raw.index) && raw.index >= 0 && raw.index < questions.length) {
+        return raw;
+      }
+    } catch {}
+    return null;
+  }
+  function saveProgress() {
+    try { localStorage.setItem(PROGRESS_KEY, JSON.stringify({ index, sessionCorrect })); } catch {}
+  }
+  function clearProgress() {
+    try { localStorage.removeItem(PROGRESS_KEY); } catch {}
+  }
 
   function loadScore() {
     try { return Number(localStorage.getItem(SCORE_KEY)) || 0; } catch { return 0; }
@@ -67,6 +85,7 @@
     answered = false;
 
     els.progress.textContent = `Question ${index + 1} of ${questions.length}`;
+    els.eyebrow.textContent = q.topic ? `${q.topic} · Question` : "Case study · Question";
     renderFigure(q);
     els.question.textContent = q.stem;
 
@@ -132,14 +151,17 @@
   function next() {
     if (index < questions.length - 1) {
       index++;
+      saveProgress();
       render();
     } else {
+      clearProgress();
       finish();
     }
   }
 
   function finish() {
     els.case.classList.add("no-figure");
+    els.eyebrow.textContent = "Case study · Question";
     els.progress.textContent = "Exam complete";
     els.question.textContent = `You answered ${sessionCorrect} of ${questions.length} correctly.`;
     els.options.innerHTML = "";
@@ -150,6 +172,7 @@
       els.btn.onclick = null;
       index = 0;
       sessionCorrect = 0;
+      clearProgress();
       render();
     };
   }
@@ -172,6 +195,14 @@
   });
 
   renderScore(false);
-  if (questions.length) render();
-  else els.question.textContent = "No questions loaded. Add some to questions.js.";
+  if (questions.length) {
+    const saved = loadProgress();
+    if (saved) {
+      index = saved.index;
+      sessionCorrect = saved.sessionCorrect || 0;
+    }
+    render();
+  } else {
+    els.question.textContent = "No questions loaded. Add some to questions.js.";
+  }
 })();
