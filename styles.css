@@ -252,3 +252,17 @@ figcaption {
   .hint { display: none; }
   .actions { justify-content: flex-end; }
 }
+
+/* short/landscape viewports (e.g. iPad Air landscape): fit one screen, no scroll */
+@media (min-width: 961px) and (max-height: 900px) {
+  .page { padding: 20px 40px 20px; }
+  .case { gap: 48px; margin-bottom: 20px; }
+  .figure-frame { aspect-ratio: 16 / 9; }
+  .stem { padding-top: 0; }
+  .question { font-size: 19px; line-height: 1.35; }
+  .option { padding: 6px 10px; font-size: 16px; }
+  .letter { width: 30px; height: 30px; }
+  .feedback { margin-top: 12px; padding: 12px 20px; }
+  .explanation { font-size: 13px; line-height: 1.45; }
+  .actions { margin-top: 14px; }
+}
