@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GI II Exam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="progress" id="progress"></div>
+      <div class="score">
+        <div class="score-label">All-time accumulated score</div>
+        <div class="score-value"><span id="score">0</span> PTS</div>
+      </div>
+    </header>
+
+    <section class="case">
+      <figure class="figure" id="figure">
+        <div class="figure-frame" id="figureFrame"></div>
+        <figcaption id="figCaption"></figcaption>
+      </figure>
+      <div class="divider" aria-hidden="true"></div>
+      <div class="stem">
+        <div class="eyebrow" id="eyebrow">Case study • Question</div>
+        <p class="question" id="question"></p>
+      </div>
+    </section>
+
+    <ol class="options" id="options" role="listbox" aria-label="Answer choices"></ol>
+
+    <section class="feedback" id="feedback" hidden>
+      <div class="verdict" id="verdict"></div>
+      <p class="explanation" id="explanation"></p>
+    </section>
+
+    <footer class="actions">
+      <span class="hint" id="hint">Press A–E to choose, Enter to submit</span>
+      <button class="btn" id="submitBtn" disabled>Submit answer</button>
+    </footer>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
