@@ -39,7 +39,7 @@ body {
 }
 
 .progress {
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -49,14 +49,14 @@ body {
 .score { text-align: right; }
 
 .score-label {
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
 .score-value {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 400;
   margin-top: 4px;
   font-variant-numeric: tabular-nums;
@@ -100,7 +100,7 @@ body {
 
 figcaption {
   margin-top: 16px;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -115,7 +115,7 @@ figcaption {
 .stem { padding-top: 64px; }
 
 .eyebrow {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
@@ -124,7 +124,7 @@ figcaption {
 
 .question {
   margin: 0;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 1.4;
   font-weight: 400;
 }
@@ -146,7 +146,7 @@ figcaption {
   border-bottom: 1px solid var(--line);
   border-radius: 8px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   transition: background 0.15s ease;
   user-select: none;
 }
@@ -165,7 +165,7 @@ figcaption {
   border: 1px solid var(--line);
   display: grid;
   place-items: center;
-  font-size: 15px;
+  font-size: 13px;
   background: var(--bg);
   transition: all 0.15s ease;
 }
@@ -198,7 +198,7 @@ figcaption {
 }
 
 .verdict {
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -207,7 +207,7 @@ figcaption {
 .verdict.ok { color: var(--correct); }
 .verdict.no { color: var(--wrong); }
 
-.explanation { margin: 0; font-size: 16px; line-height: 1.6; }
+.explanation { margin: 0; font-size: 14px; line-height: 1.6; }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
@@ -223,11 +223,11 @@ figcaption {
   gap: 16px;
 }
 
-.hint { font-size: 13px; color: var(--muted); }
+.hint { font-size: 11px; color: var(--muted); }
 
 .btn {
   font: inherit;
-  font-size: 15px;
+  font-size: 13px;
   padding: 12px 26px;
   border-radius: 999px;
   border: 1px solid var(--ink);
@@ -246,9 +246,9 @@ figcaption {
   .case { grid-template-columns: 1fr; gap: 24px; margin-bottom: 36px; }
   .divider { display: none; }
   .stem { padding-top: 0; }
-  .question { font-size: 20px; }
-  .option { font-size: 17px; gap: 14px; }
-  .score-value { font-size: 26px; }
+  .question { font-size: 18px; }
+  .option { font-size: 15px; gap: 14px; }
+  .score-value { font-size: 24px; }
   .hint { display: none; }
   .actions { justify-content: flex-end; }
 }
