@@ -7,9 +7,18 @@
 // points:         score awarded for a correct answer (default 250).
 // blueprintGroup: best-effort mapping to the course Test Blueprint topic rows.
 //                 Rows the blueprint splits further (Path of GI 3; Antibiotics used in
-//                 GI disorder; Lab1/Lab2; Active Learning; the 4 named E-learning topics)
-//                 are NOT separately identifiable from the source data, so their questions
-//                 stay folded into the closest broader group above rather than being guessed.
+//                 GI disorder; Lab1/Lab2; Active Learning; 3 of the 4 named E-learning
+//                 topics) are NOT separately identifiable from the source spreadsheet,
+//                 so their questions stay folded into the closest broader group rather
+//                 than being guessed — EXCEPT the 3 below, confirmed against the real
+//                 Lec1 slide deck (GI II 01.pdf) as congenital-abnormality content
+//                 wrongly bucketed under "Pathology of GI 1" by the source spreadsheet.
+//
+// Also verified against Lec1 (2026-09-22): 5 further "Pathology of GI 1" questions
+// (esophageal varices MCQ-GI2-037; esophageal SCC MCQ-GI2-357/390; oral pyogenic
+// granuloma MCQ-GI2-267/419) describe diagnoses NOT covered anywhere in that lecture.
+// Left tagged as Path of GI 1 (unchanged) pending Lec2/Lec3 slides to confirm their
+// true home — flagging here rather than guessing.
 window.QUESTIONS = [
   {
     id: "MCQ-GI2-001",
@@ -1229,7 +1238,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-149",
     topic: "Pathology of GI 1",
-    blueprintGroup: "Path of GI 1",
+    blueprintGroup: "Congenital Abnormalities of GI Tract",
     stem: "Neonate with non-bilious projectile vomiting, olive-shaped soft tissue mass in epigastrium. Diagnosis?",
     options: ["Congenital hypertrophic pyloric stenosis", "Annular pancreas", "Duodenal atresia"],
     answer: 0,
@@ -1544,7 +1553,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-190",
     topic: "Pathology of GI 1",
-    blueprintGroup: "Path of GI 1",
+    blueprintGroup: "Congenital Abnormalities of GI Tract",
     stem: "Congenital anterior abdominal wall defect with herniation of bowel and liver covered by a peritoneal sac at the umbilicus. Diagnosis?",
     options: ["Gastroschisis", "Omphalocele", "Pyloric stenosis", "Inguinal hernia"],
     answer: 1,
@@ -2165,7 +2174,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-266",
     topic: "Pathology of GI 1",
-    blueprintGroup: "Path of GI 1",
+    blueprintGroup: "Congenital Abnormalities of GI Tract",
     stem: "2-week-old female neonate presents with non-bilious vomiting; palpation reveals an epigastric olive-shaped mass. Pathological lesion?",
     options: ["Tracheoesophageal fistula", "Glandular metaplasia in esophagus", "Circular muscular hypertrophy of pylorus", "Intestinal metaplasia in antrum"],
     answer: 2,
