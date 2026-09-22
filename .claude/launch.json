@@ -4,8 +4,8 @@
     {
       "name": "exam",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "5173"],
-      "port": 5173
+      "runtimeArgs": ["-m", "http.server", "5199"],
+      "port": 5199
     }
   ]
 }

@@ -65,7 +65,13 @@
       </div>
     </section>
 
-    <ol class="options" id="options" role="listbox" aria-label="Answer choices"></ol>
+    <div class="options-wrap" id="optionsWrap">
+      <ol class="options" id="options" role="listbox" aria-label="Answer choices"></ol>
+      <div class="reveal-gate" id="revealGate">
+        <button class="reveal-btn" id="revealBtn" type="button">Show answer choices</button>
+        <p class="reveal-note">Choice lengths are hidden until you reveal them, so you read every option before any one visibly stands out.</p>
+      </div>
+    </div>
 
     <section class="feedback" id="feedback" hidden>
       <div class="verdict" id="verdict"></div>
@@ -73,7 +79,7 @@
     </section>
 
     <footer class="actions">
-      <span class="hint" id="hint">Press A–E to choose, Enter to submit</span>
+      <span class="hint" id="hint">Reveal choices, then A–E to choose, Enter to submit</span>
       <button class="btn" id="submitBtn" disabled>Submit answer</button>
     </footer>
   </main>

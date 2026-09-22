@@ -258,16 +258,65 @@ figcaption {
 }
 
 /* ---------- options ---------- */
+.options-wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .options {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  max-width: 900px;
+}
+
+.options-wrap:not(.revealed) .options {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.reveal-gate {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  padding: 24px;
+  background: var(--bg);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+
+.options-wrap.revealed .reveal-gate { display: none; }
+
+.reveal-btn {
+  font: inherit;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.reveal-btn:hover { opacity: 0.85; }
+
+.reveal-note {
+  margin: 0;
+  max-width: 440px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
 }
 
 .option {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 22px;
   padding: 12px 10px;
   margin: 0 -10px;
@@ -296,7 +345,10 @@ figcaption {
   font-size: 13px;
   background: var(--bg);
   transition: all 0.15s ease;
+  margin-top: 1px; /* aligns with the first line of multi-line option text */
 }
+
+.opt-text { flex: 1 1 auto; min-width: 0; }
 
 .option.selected .letter {
   border-color: var(--accent);

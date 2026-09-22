@@ -44,12 +44,16 @@
     statWrongN: $("statWrongN"),
     statUnseenN: $("statUnseenN"),
     statsBar: $("statsBar"),
+    optionsWrap: $("optionsWrap"),
+    revealGate: $("revealGate"),
+    revealBtn: $("revealBtn"),
   };
 
   let questions = allQuestions;
   let index = 0;
   let selected = null;
   let answered = false;
+  let revealed = false; // "no length tell": option text is hidden until this is true
   let sessionCorrect = 0;
   let total = loadScore();
   let activeGroups = loadFilters();
@@ -258,6 +262,7 @@
     const q = questions[index];
     selected = null;
     answered = false;
+    revealed = false;
 
     const label = statusLabel(q);
     els.progress.textContent = `Question ${index + 1} of ${questions.length}` + (label ? ` · ${label}` : "");
@@ -272,11 +277,15 @@
       li.className = "option";
       li.tabIndex = 0;
       li.setAttribute("role", "option");
-      li.innerHTML = `<span class="letter">${LETTERS[i]}</span><span></span>`;
-      li.lastChild.textContent = text;
-      li.addEventListener("click", () => select(i));
+      li.innerHTML = `<span class="letter">${LETTERS[i]}</span><span class="opt-text"></span>`;
+      li.querySelector(".opt-text").textContent = text;
+      li.addEventListener("click", () => (revealed ? select(i) : reveal()));
       els.options.appendChild(li);
     });
+
+    // No length tell: option text stays hidden (see .options-wrap:not(.revealed) in CSS)
+    // until reveal() fires, so nothing about relative option length is visible beforehand.
+    els.optionsWrap.classList.remove("revealed");
 
     els.feedback.hidden = true;
     els.btn.textContent = "Submit answer";
@@ -284,8 +293,14 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function reveal() {
+    if (revealed) return;
+    revealed = true;
+    els.optionsWrap.classList.add("revealed");
+  }
+
   function select(i) {
-    if (answered) return;
+    if (answered || !revealed) return;
     selected = i;
     [...els.options.children].forEach((li, j) => {
       li.classList.toggle("selected", j === i);
@@ -364,12 +379,17 @@
     answered ? next() : submit();
   });
 
+  els.revealBtn.addEventListener("click", reveal);
+
   document.addEventListener("keydown", (e) => {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     const i = e.key.length === 1 ? LETTERS.indexOf(e.key.toUpperCase()) : -1;
     const q = questions[index];
     if (i >= 0 && q && i < q.options.length && !answered && els.options.children.length) {
-      select(i);
+      revealed ? select(i) : reveal();
+    } else if ((e.key === "Enter" || e.code === "Enter") && !revealed && q && els.options.children.length) {
+      e.preventDefault();
+      reveal();
     } else if ((e.key === "Enter" || e.code === "Enter") && !els.btn.disabled) {
       e.preventDefault();
       els.btn.click();
