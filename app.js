@@ -3,6 +3,7 @@
   const SCORE_KEY = "gi2exam.totalScore";
   const PROGRESS_KEY = "gi2exam.progress";
   const FILTER_KEY = "gi2exam.filters";
+  const HISTORY_KEY = "gi2exam.history";
   const allQuestions = window.QUESTIONS || [];
 
   // Ordered list of every blueprintGroup present in the bank, each with a live count.
@@ -45,6 +46,7 @@
   let sessionCorrect = 0;
   let total = loadScore();
   let activeGroups = loadFilters();
+  let history = loadHistory(); // { [question.id]: "correct" | "wrong" }
 
   // ---------- persistence ----------
   function loadFilters() {
@@ -58,17 +60,48 @@
     try { localStorage.setItem(FILTER_KEY, JSON.stringify([...activeGroups])); } catch {}
   }
 
+  function loadHistory() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(HISTORY_KEY));
+      if (raw && typeof raw === "object") return raw;
+    } catch {}
+    return {};
+  }
+  function saveHistory() {
+    try { localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); } catch {}
+  }
+
+  // Unanswered first, then previously-wrong, then previously-correct last.
+  // Stable within each group, so topic order stays predictable.
+  function orderQuestions(list) {
+    const priority = (q) => {
+      const status = history[q.id];
+      if (status === "wrong") return 1;
+      if (status === "correct") return 2;
+      return 0; // unanswered
+    };
+    return list
+      .map((q, i) => [q, i])
+      .sort((a, b) => priority(a[0]) - priority(b[0]) || a[1] - b[1])
+      .map(([q]) => q);
+  }
+
+  function buildActiveQuestions() {
+    const filtered = allQuestions.filter((q) => activeGroups.has(q.blueprintGroup || "Uncategorized"));
+    return orderQuestions(filtered);
+  }
+
   function loadProgress() {
     try {
       const raw = JSON.parse(localStorage.getItem(PROGRESS_KEY));
-      if (raw && Number.isInteger(raw.index) && raw.index >= 0 && raw.index < questions.length) {
-        return raw;
-      }
+      if (raw && typeof raw.id === "string") return raw;
     } catch {}
     return null;
   }
   function saveProgress() {
-    try { localStorage.setItem(PROGRESS_KEY, JSON.stringify({ index, sessionCorrect })); } catch {}
+    const q = questions[index];
+    if (!q) return;
+    try { localStorage.setItem(PROGRESS_KEY, JSON.stringify({ id: q.id, sessionCorrect })); } catch {}
   }
   function clearProgress() {
     try { localStorage.removeItem(PROGRESS_KEY); } catch {}
@@ -127,7 +160,7 @@
   function applyFilters() {
     saveFilters();
     updateFilterCount();
-    questions = allQuestions.filter((q) => activeGroups.has(q.blueprintGroup || "Uncategorized"));
+    questions = buildActiveQuestions();
     index = 0;
     sessionCorrect = 0;
     clearProgress();
@@ -170,6 +203,13 @@
     els.caption.textContent = q.caption || "";
   }
 
+  function statusLabel(q) {
+    const status = history[q.id];
+    if (status === "wrong") return "Review · missed last time";
+    if (status === "correct") return "Review · correct last time";
+    return null;
+  }
+
   function render() {
     if (!questions.length) {
       els.progress.textContent = "No questions match this filter";
@@ -186,7 +226,8 @@
     selected = null;
     answered = false;
 
-    els.progress.textContent = `Question ${index + 1} of ${questions.length}`;
+    const label = statusLabel(q);
+    els.progress.textContent = `Question ${index + 1} of ${questions.length}` + (label ? ` · ${label}` : "");
     els.eyebrow.textContent = q.topic ? `${q.topic} · Question` : "Case study · Question";
     renderFigure(q);
     els.question.textContent = q.stem;
@@ -232,6 +273,9 @@
     items.forEach((li) => li.classList.remove("selected"));
     els.options.classList.add("locked");
 
+    history[q.id] = correct ? "correct" : "wrong";
+    saveHistory();
+
     if (correct) {
       sessionCorrect++;
       total += q.points ?? 250;
@@ -272,6 +316,8 @@
     els.btn.disabled = false;
     els.btn.onclick = () => {
       els.btn.onclick = null;
+      // Re-order for the new pass: anything just marked wrong/correct moves accordingly.
+      questions = buildActiveQuestions();
       index = 0;
       sessionCorrect = 0;
       clearProgress();
@@ -298,12 +344,13 @@
 
   renderScore(false);
   buildFilterPanel();
-  questions = allQuestions.filter((q) => activeGroups.has(q.blueprintGroup || "Uncategorized"));
+  questions = buildActiveQuestions();
 
   if (allQuestions.length) {
     const saved = loadProgress();
     if (saved) {
-      index = saved.index;
+      const foundIndex = questions.findIndex((q) => q.id === saved.id);
+      index = foundIndex >= 0 ? foundIndex : 0;
       sessionCorrect = saved.sessionCorrect || 0;
     }
     render();
