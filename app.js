@@ -2,7 +2,18 @@
   const LETTERS = "ABCDEFGH";
   const SCORE_KEY = "gi2exam.totalScore";
   const PROGRESS_KEY = "gi2exam.progress";
-  const questions = window.QUESTIONS || [];
+  const FILTER_KEY = "gi2exam.filters";
+  const allQuestions = window.QUESTIONS || [];
+
+  // Ordered list of every blueprintGroup present in the bank, each with a live count.
+  const GROUPS = (() => {
+    const counts = new Map();
+    allQuestions.forEach((q) => {
+      const g = q.blueprintGroup || "Uncategorized";
+      counts.set(g, (counts.get(g) || 0) + 1);
+    });
+    return [...counts.entries()].map(([name, count]) => ({ name, count }));
+  })();
 
   const $ = (id) => document.getElementById(id);
   const els = {
@@ -19,13 +30,33 @@
     explanation: $("explanation"),
     hint: $("hint"),
     btn: $("submitBtn"),
+    filterToggle: $("filterToggle"),
+    filterCount: $("filterCount"),
+    filterPanel: $("filterPanel"),
+    filterList: $("filterList"),
+    filterAll: $("filterAll"),
+    filterNone: $("filterNone"),
   };
 
+  let questions = allQuestions;
   let index = 0;
   let selected = null;
   let answered = false;
   let sessionCorrect = 0;
   let total = loadScore();
+  let activeGroups = loadFilters();
+
+  // ---------- persistence ----------
+  function loadFilters() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(FILTER_KEY));
+      if (Array.isArray(raw) && raw.length) return new Set(raw);
+    } catch {}
+    return new Set(GROUPS.map((g) => g.name)); // default: everything on
+  }
+  function saveFilters() {
+    try { localStorage.setItem(FILTER_KEY, JSON.stringify([...activeGroups])); } catch {}
+  }
 
   function loadProgress() {
     try {
@@ -60,6 +91,66 @@
     }
   }
 
+  // ---------- filter panel ----------
+  function buildFilterPanel() {
+    els.filterList.innerHTML = "";
+    GROUPS.forEach(({ name, count }) => {
+      const li = document.createElement("li");
+      li.className = "filter-item" + (/not in blueprint/i.test(name) ? " out-of-scope" : "");
+      const id = "flt-" + name.replace(/[^a-z0-9]+/gi, "-").toLowerCase();
+      li.innerHTML = `
+        <input type="checkbox" id="${id}">
+        <span class="label"></span>
+        <span class="count">${count}</span>
+      `;
+      const input = li.querySelector("input");
+      input.checked = activeGroups.has(name);
+      li.querySelector(".label").textContent = name;
+      input.addEventListener("change", () => {
+        if (input.checked) activeGroups.add(name);
+        else activeGroups.delete(name);
+        applyFilters();
+      });
+      li.addEventListener("click", (e) => {
+        if (e.target !== input) input.click();
+      });
+      els.filterList.appendChild(li);
+    });
+    updateFilterCount();
+  }
+
+  function updateFilterCount() {
+    els.filterCount.textContent =
+      activeGroups.size === GROUPS.length ? "" : `(${activeGroups.size}/${GROUPS.length})`;
+  }
+
+  function applyFilters() {
+    saveFilters();
+    updateFilterCount();
+    questions = allQuestions.filter((q) => activeGroups.has(q.blueprintGroup || "Uncategorized"));
+    index = 0;
+    sessionCorrect = 0;
+    clearProgress();
+    render();
+  }
+
+  els.filterToggle.addEventListener("click", () => {
+    const open = els.filterPanel.hidden;
+    els.filterPanel.hidden = !open;
+    els.filterToggle.setAttribute("aria-expanded", String(open));
+  });
+  els.filterAll.addEventListener("click", () => {
+    activeGroups = new Set(GROUPS.map((g) => g.name));
+    buildFilterPanel();
+    applyFilters();
+  });
+  els.filterNone.addEventListener("click", () => {
+    activeGroups = new Set();
+    buildFilterPanel();
+    applyFilters();
+  });
+
+  // ---------- quiz ----------
   function placeholderSvg(label) {
     return `<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${label}">
       <rect width="300" height="200" fill="#111"/>
@@ -80,6 +171,17 @@
   }
 
   function render() {
+    if (!questions.length) {
+      els.progress.textContent = "No questions match this filter";
+      els.eyebrow.textContent = "Case study · Question";
+      els.case.classList.add("no-figure");
+      els.question.textContent = "Turn a topic back on in Filter topics to keep going.";
+      els.options.innerHTML = "";
+      els.feedback.hidden = true;
+      els.btn.disabled = true;
+      return;
+    }
+
     const q = questions[index];
     selected = null;
     answered = false;
@@ -119,7 +221,7 @@
   }
 
   function submit() {
-    if (selected === null || answered) return;
+    if (selected === null || answered || !questions.length) return;
     const q = questions[index];
     const correct = selected === q.answer;
     answered = true;
@@ -195,7 +297,10 @@
   });
 
   renderScore(false);
-  if (questions.length) {
+  buildFilterPanel();
+  questions = allQuestions.filter((q) => activeGroups.has(q.blueprintGroup || "Uncategorized"));
+
+  if (allQuestions.length) {
     const saved = loadProgress();
     if (saved) {
       index = saved.index;
