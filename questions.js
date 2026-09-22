@@ -1,14 +1,20 @@
 // Question bank for GI Block II exam — generated from GI_II_Quiz_Shuffled.xlsx
 // 436 questions across GI pathology, clinical GI tract, and hepatobiliary/pancreas topics.
 //
-// image:   path/URL to a picture, or omit for a text-only question.
-// caption: text shown under the image.
-// answer:  index of the correct option (0 = A, 1 = B, ...).
-// points:  score awarded for a correct answer (default 250).
+// image:          path/URL to a picture, or omit for a text-only question.
+// caption:        text shown under the image.
+// answer:         index of the correct option (0 = A, 1 = B, ...).
+// points:         score awarded for a correct answer (default 250).
+// blueprintGroup: best-effort mapping to the course Test Blueprint topic rows.
+//                 Rows the blueprint splits further (Path of GI 3; Antibiotics used in
+//                 GI disorder; Lab1/Lab2; Active Learning; the 4 named E-learning topics)
+//                 are NOT separately identifiable from the source data, so their questions
+//                 stay folded into the closest broader group above rather than being guessed.
 window.QUESTIONS = [
   {
     id: "MCQ-GI2-001",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "40 years male heavy smoking and have painless tumor at lower lip",
     options: ["Aphthous ulcer", "Mucocele", "Pyogenic granuloma", "Squamous cell carcinoma"],
     answer: 3,
@@ -17,6 +23,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-002",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Hematemesis, long-term NSAIDs use. What pathway is involved in mucosal damage?",
     options: ["Inhibit COX-1", "Inhibit COX-2", "Elevate urease"],
     answer: 0,
@@ -25,6 +32,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-003",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "30-year-old man with epigastric pain radiating to back and left shoulder; lab shows elevated serum lipase and amylase levels. Most critical initial management?",
     options: ["Replacement of biliary stent", "Oxygen supplementation", "Intravenous fluid resuscitation", "Adequate analgesic drug", "Induce oral intake"],
     answer: 2,
@@ -33,6 +41,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-004",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "A 10-month-old boy with severe watery diarrhea for 2 days. Viral gastroenteritis suspected. What is the most common life-threatening complication?",
     options: ["Severe dehydration", "Intestinal ischemia", "Intestinal obstruction", "Liver abscess"],
     answer: 0,
@@ -41,6 +50,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-005",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "A 65-year-old man presents with severe watery diarrhea and vomiting immediately after returning from the border. The voluminous stools resemble rice water with fishy odor. Improves after fluid therapy. Which histologic feature is most likely present?",
     options: ["Fibrinopurulent pseudomembrane", "Diffuse mucosal ulceration", "Mild mucosal congestion", "Severe transmural necrosis"],
     answer: 2,
@@ -49,6 +59,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-006",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Acute diarrhea for 3 days after raw seafood consumption. Which organism is most likely?",
     options: ["Yersinia enterocolitica", "Entamoeba histolytica", "Staphylococcus aureus", "Vibrio parahaemolyticus", "Cryptosporidium parvum"],
     answer: 3,
@@ -57,6 +68,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-007",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Which of the following is more characteristic of Crohn's disease than ulcerative colitis?",
     options: ["Inflammation involving colon only", "Continuous inflammation throughout colon", "Inflammation restricted to superficial mucosa", "Presence of toxic megacolon", "Usually, presence of fistulae"],
     answer: 4,
@@ -65,6 +77,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-008",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Which clinical sign indicates impaired hepatic metabolic/clearance function?",
     options: ["Splenomegaly", "Ascites", "Gynecomastia", "Caput medusae"],
     answer: 2,
@@ -73,6 +86,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-009",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Female presenting with pruritus and icterus. LFT: TP and Albumin low, AST, ALT, ALP significantly elevated. Liver biopsy shows non-suppurative granulomatous bile duct destruction.",
     options: ["Positive antimitochondrial antibody", "Positive HepC Ab", "Positive anti-smooth muscle antibody", "Decreased serum ceruloplasmin", "Increased serum ferritin"],
     answer: 0,
@@ -81,6 +95,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-010",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "19-year-old female with acetaminophen overdose and elevated AST/ALT. Which histopathologic lesion is typical?",
     options: ["Periportal necrosis", "Microvesicular steatosis", "Biliary tract cholestasis", "Zone 3 necrosis", "Intracellular cholestasis"],
     answer: 3,
@@ -89,6 +104,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-011",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Epigastric pain exacerbated by fatty meals. Most appropriate initial imaging investigation?",
     options: ["Ultrasound abdomen", "Upper GI series", "MRI", "CT abdomen"],
     answer: 0,
@@ -97,6 +113,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-012",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Coombs test positive neonate with severe unconjugated hyperbilirubinemia. Risk of what brain injury?",
     options: ["Encephalocele", "Intraventricular hemorrhage", "Kernicterus", "Hydrocephalus"],
     answer: 2,
@@ -105,6 +122,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-013",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "26-year-old man with lower abdominal pain and loose stools for >6 months; labs and physical exam normal, no family history of CRC. Most appropriate management?",
     options: ["High fiber diet", "Antispasmodic agent", "Colonoscopy", "Stool occult blood"],
     answer: 0,
@@ -113,6 +131,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-014",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "50-year-old man with left lower abdominal crampy pain, loose stools for 6 months, and positive fecal occult blood. Next step?",
     options: ["Ultrasound abdomen", "High fiber diet", "Low FODMAP diet", "Colonoscopy", "Anxiolytic agent"],
     answer: 3,
@@ -121,6 +140,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-015",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "43-year-old man with 20-year history of daily heavy beer drinking presents with jaundice and icteric sclera. Which lab abnormality reflects hepatic synthetic failure?",
     options: ["Decreased prothrombin time", "Decreased albumin", "Decreased alkaline phosphatase", "Decreased AST"],
     answer: 1,
@@ -129,6 +149,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-016",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "10 cm posterior inferior lobe liver abscess. Role of interventional radiology?",
     options: ["PEIT", "Percutaneous catheter drainage", "Trans-arterial-chemo-embolization", "Percutaneous transhepatic biliary drainage", "Radiofrequency ablation"],
     answer: 1,
@@ -137,6 +158,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-017",
     topic: "GI Imaging & Modalities",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Room setup with ceiling-mounted C-arm fluoroscopy and integrated operative surgical table. Name of this facility?",
     options: ["Conventional CT room", "Hybrid angio suite / Biplane DSA", "Upper endoscopy suite", "Lithotripsy unit"],
     answer: 1,
@@ -145,6 +167,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-018",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Adverse drug reaction of Cimetidine when used long-term (>8-11 weeks)?",
     options: ["Agranulocytosis", "Acute pancreatitis", "Anti-androgenic effect (gynecomastia, impotence)", "Hepatic CYP450 inhibition"],
     answer: 2,
@@ -153,6 +176,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-019",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antacid agent is readily absorbed into the systemic circulation?",
     options: ["Calcium carbonate", "Magnesium hydroxide", "Sodium bicarbonate", "Aluminium hydroxide", "Sucralfate"],
     answer: 2,
@@ -161,6 +185,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-020",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Mechanism of action of proton pump inhibitors (PPIs)?",
     options: ["Irreversible inhibition of H+/K+ ATPase", "Reversible inhibition of H+/K+ ATPase", "H2 receptor blockade", "Anticholinergic action"],
     answer: 0,
@@ -169,6 +194,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-021",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Treatment for acute watery diarrhea in children that does not impair bowel motility?",
     options: ["Diphenoxylate", "Loperamide", "Atropine", "Racecadotril"],
     answer: 3,
@@ -177,6 +203,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-022",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which prokinetic / antiemetic compound causes extrapyramidal symptoms?",
     options: ["Lubiprostone", "Metoclopramide", "Granisetron", "Aprepitant", "Racecadotril"],
     answer: 1,
@@ -185,6 +212,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-023",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "40-year-old female with hard stools for 2 years, periumbilical pain relieved by defecation. Normal exams, labs, and stool microscopy. Next step?",
     options: ["Antibiotic", "CT whole abdomen", "Colonoscopy", "Patient education & lifestyle reassurance", "Stimulant laxative"],
     answer: 3,
@@ -193,6 +221,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-024",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "48-year-old cirrhotic female with hematemesis from suspected esophageal varices. Pharmacodynamics of emergency IV drug (Somatostatin / Octreotide / Terlipressin)?",
     options: ["Decrease splanchnic blood flow", "Increase portal blood pool", "Increase total peripheral resistance", "Increase intrahepatic resistance", "Decrease venous return"],
     answer: 0,
@@ -201,6 +230,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-026",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Mr. Prasit diagnosed with alcoholism; normal exam, AST 50 U/L, Albumin 4 g/dL. Ultrasound shows bright liver parenchyma. Liver histology?",
     options: ["Steatohepatitis", "HCC", "Steatosis", "Cirrhosis", "Bridging fibrosis"],
     answer: 2,
@@ -209,6 +239,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-027",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Elderly patient with chronic constipation and suspected colon cancer. Radiographic study?",
     options: ["Abdominal plain film", "Barium enema", "Upper GI series"],
     answer: 1,
@@ -217,6 +248,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-028",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "70-year-old obese female with fever, RUQ pain, and 10 cm solitary liver abscess. Interventional radiology modality?",
     options: ["Percutaneous catheter drainage", "Thermal ablation", "Percutaneous needle biopsy"],
     answer: 0,
@@ -225,6 +257,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-029",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which compound activates intestinal chloride channels to treat chronic constipation?",
     options: ["Aprepitant", "Domperidone", "Lactulose", "Lubiprostone"],
     answer: 3,
@@ -233,6 +266,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-031",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug causes extrapyramidal symptoms through dopamine receptor antagonism?",
     options: ["Racecadotril", "Metoclopramide", "Aprepitant", "Lubiprostone", "Granisetron"],
     answer: 1,
@@ -241,6 +275,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-032",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Hepatic cysts lined by simple cuboidal epithelium. Associated genetic mutation?",
     options: ["PKD1 / PKD2", "p53", "RET", "APC"],
     answer: 0,
@@ -249,6 +284,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-033",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "15-year-old girl with RLQ pain and rebound tenderness; appendectomy performed. What is the essential histological criterion for acute appendicitis?",
     options: ["Submucosal lymphoid hyperplasia", "Neutrophilic infiltration into muscularis propria", "Mucosal lymphocytic infiltrate", "Fecalith in lumen", "Subserosal neutrophils"],
     answer: 1,
@@ -257,6 +293,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-035",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Female with SLE on high-dose corticosteroids presents with chronic diarrhea, cramping, and urticarial rash. Biopsy reveals parasitic larvae. Organism?",
     options: ["Entamoeba histolytica", "Strongyloides stercoralis", "Ascaris lumbricoides", "Giardia lamblia"],
     answer: 1,
@@ -265,6 +302,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-036",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Which pathological feature differentiates Crohn's disease from Ulcerative Colitis?",
     options: ["Crypt abscesses confined to mucosa", "Continuous rectal involvement", "Pseudopolyps", "Fistula formation and transmural fissures"],
     answer: 3,
@@ -273,6 +311,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-037",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "55-year-old male with chronic alcoholism presents with massive hematemesis and shock. Which lower esophageal change is responsible?",
     options: ["Dilated submucosal veins with rupture", "Intraepithelial eosinophils", "Columnar metaplasia", "Absent ganglion cells", "Mucosal outpouching"],
     answer: 0,
@@ -281,6 +320,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-038",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "67-year-old woman with RLQ pain, 10 kg weight loss, and pale conjunctiva. Most appropriate investigation?",
     options: ["Antispasmodic", "Barium enema", "Stool culture", "Colonoscopy", "Fecal calprotectin"],
     answer: 3,
@@ -289,6 +329,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-039",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "26-year-old with lower abdominal pain and loose stools for 5 months without alarm features. Best dietary intervention?",
     options: ["Gluten overload", "Fasting", "High fat diet", "Low FODMAP diet"],
     answer: 3,
@@ -297,6 +338,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-041",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "H. pylori colonization is best observed in which gastric mucosa, and does it colonize intestinal metaplasia?",
     options: ["Colonizes intestinal metaplasia only", "H. pylori colonizes native gastric foveolar epithelium, not areas of intestinal metaplasia"],
     answer: 1,
@@ -305,6 +347,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-042",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Patient with alcoholic cirrhosis, hematemesis, and portal hypertension dies. Liver autopsy finding?",
     options: ["Mixed micro-macronodular cirrhosis", "Centrilobular necrosis only", "Massive steatosis", "Hemochromatosis"],
     answer: 0,
@@ -313,6 +356,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-043",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which of the following conditions causes Kernicterus in newborns?",
     options: ["Ineffective erythropoiesis / Severe hemolytic disease", "Gilbert syndrome", "Rotor syndrome", "Dubin-Johnson syndrome"],
     answer: 0,
@@ -321,6 +365,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-044",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Repeated bouts of mild abdominal pain in chronic alcoholic who died in an accident. Pancreas shows fibrosis, acinar atrophy, and inspissated protein plugs in ducts. Major etiology?",
     options: ["Alcohol abuse", "Gallstones", "Viral infection", "Drug toxicity", "Trauma"],
     answer: 0,
@@ -329,6 +374,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-045",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug is a prostaglandin E1 analog used for gastroduodenal mucosal protection?",
     options: ["Sucralfate", "Misoprostol", "Ranitidine", "Omeprazole"],
     answer: 1,
@@ -337,6 +383,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-046",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Preterm infant (32 weeks) develops abdominal distension, bloody stool, E. coli sepsis, and dies. Likely diagnosis?",
     options: ["Meconium ileus", "Necrotizing enterocolitis (NEC)", "Intussusception", "Hirschsprung disease"],
     answer: 1,
@@ -345,6 +392,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-047",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Keyword: Discontinuous inflammatory mucosal lesions separated by normal bowel (skip lesions). Diagnosis?",
     options: ["Ischemic colitis", "Ulcerative colitis", "Celiac sprue", "Crohn's disease"],
     answer: 3,
@@ -353,6 +401,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-048",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Patient with diarrhea triggered by gluten/gliadin exposure with villous blunting on biopsy. Diagnosis?",
     options: ["Celiac sprue (Gluten-sensitive enteropathy)", "Tropical sprue", "Crohn's disease", "Whipple disease"],
     answer: 0,
@@ -361,6 +410,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-049",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "True/False: Thai/Asian patients with diverticular disease most commonly develop diverticula in the left-sided colon.",
     options: ["True", "False (Right-sided / cecum & ascending colon is far more common in Asians)"],
     answer: 1,
@@ -369,6 +419,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-050",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug acts by activating chloride channels in intestinal enterocytes?",
     options: ["Lubiprostone", "Lactulose", "Bisacodyl", "Senna"],
     answer: 0,
@@ -377,6 +428,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-051",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antidiarrheal drug can induce paralytic ileus?",
     options: ["Bismuth subsalicylate", "Diphenoxylate", "Psyllium", "Racecadotril"],
     answer: 1,
@@ -385,6 +437,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-053",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "38-year-old patient with nocturnal retrosternal burning. Endoscopy shows salmon-pink velvety glandular mucosa at lower esophagus. Microscopic finding?",
     options: ["No significant pathology", "Glandular metaplasia", "H. pylori infection", "Intestinal metaplasia with goblet cells (Barrett's)"],
     answer: 3,
@@ -393,6 +446,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-054",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "60-year-old on aspirin for vascular thrombosis presents with melena and gastric mucosal petechiae. Diagnosis?",
     options: ["Acute erosive gastritis", "H. pylori gastritis", "Curling ulcer", "Autoimmune gastritis"],
     answer: 0,
@@ -401,6 +455,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-055",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient with 50% body surface burn develops upper GI bleeding and mucosal petechial hemorrhages. What is this stress lesion called?",
     options: ["Mucosal atrophy", "Cushing ulcer", "Curling ulcer (acute stress mucosal erosion)", "Intestinal metaplasia"],
     answer: 2,
@@ -409,6 +464,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-056",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient with chronic epigastric pain has antral biopsy showing mucosal erythema and lymphoplasmacytic infiltration in lamina propria. Most likely cause?",
     options: ["Aspirin use", "Cigarette smoking", "H. pylori infection", "Autoimmune reaction"],
     answer: 2,
@@ -417,6 +473,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-057",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Patient with epigastric pain; endoscopy demonstrates reflux esophagitis. Recommended first-line medical therapy?",
     options: ["Repeat endoscopy in 2 months", "Endoscopic radiofrequency", "Oral Proton Pump Inhibitor (PPI)", "Emergent Nissen fundoplication"],
     answer: 2,
@@ -425,6 +482,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-058",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Premature newborn with abdominal distension, pneumatosis intestinalis, bloody stools, and E. coli bacteremia. Autopsy finding?",
     options: ["Intestinal malrotation", "Congenital megacolon", "Necrotizing enterocolitis (NEC)"],
     answer: 2,
@@ -433,6 +491,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-059",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Adult develops bloating, borborygmi, and watery diarrhea shortly after drinking a milkshake. Cause?",
     options: ["Secretory diarrhea", "Lactase deficiency (osmotic diarrhea)", "Cholera infection", "Celiac disease"],
     answer: 1,
@@ -441,6 +500,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-060",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "45-year-old female with chronic Hepatitis C cirrhosis presents with ascites, jaundice, massive hematemesis, and shock. Source of bleeding?",
     options: ["Mallory-Weiss tear", "Acute hemorrhagic gastritis", "Esophageal perforation", "Ruptured esophageal varices"],
     answer: 3,
@@ -449,6 +509,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-061",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "10-month-old infant develops severe watery diarrhea after clinic visit. Most immediate serious risk?",
     options: ["Mallory-Weiss tear", "Gastric ulcer", "Esophageal varices", "Severe hypovolemic dehydration"],
     answer: 3,
@@ -457,6 +518,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-062",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "39-year-old male with chronic heartburn; endoscopy shows velvety red patches extending into lower esophagus on white squamous background. Major risk of malignant transformation?",
     options: ["Achalasia", "Esophageal adenocarcinoma", "Gastric adenocarcinoma", "Esophageal squamous cell carcinoma"],
     answer: 1,
@@ -465,6 +527,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-063",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Cirrhotic patient with bilobar hypervascular hepatocellular carcinoma. Interventional radiology management?",
     options: ["PEIT", "Transarterial chemoembolization (TACE)", "PTBD", "Surgical resection"],
     answer: 1,
@@ -473,6 +536,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-064",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Which agent is a temporary (non-permanent) endovascular embolization material?",
     options: ["Cyanoacrylate glue", "Metallic microcoils", "Polyvinyl alcohol (PVA)", "Gelatin sponge particles (Gelfoam)"],
     answer: 3,
@@ -481,6 +545,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-065",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "65-year-old female with jaundice for 1 month, anorexia, 8 kg weight loss, icteric sclera, and dilated intrahepatic bile ducts. Pathophysiology?",
     options: ["Decreased bilirubin conjugation", "Increased bilirubin uptake", "Decreased bilirubin excretion into common bile duct / biliary obstruction"],
     answer: 2,
@@ -489,6 +554,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-066",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug reduces gastric acid secretion by blocking H2 receptors?",
     options: ["Cisapride", "Famotidine", "Omeprazole", "Hydroxyzine"],
     answer: 1,
@@ -497,6 +563,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-067",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antacid must be used with extreme caution in patients with hypertension and congestive heart failure?",
     options: ["Calcium carbonate", "Sodium bicarbonate", "Aluminium hydroxide", "Magnesium hydroxide"],
     answer: 1,
@@ -505,6 +572,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-069",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which therapeutic agent is a synthetic prostaglandin analogue?",
     options: ["Pirenzepine", "Bismuth", "Misoprostol", "Sucralfate"],
     answer: 2,
@@ -513,6 +581,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-071",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which statement regarding vitamins is biologically correct?",
     options: ["1,25-dihydroxy vitamin D3 (calcitriol) is the biological active form", "Menaquinone is synthetic"],
     answer: 0,
@@ -521,6 +590,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-072",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Patient with rheumatoid arthritis treated with Isoniazid (INH) requires supplementation of which vitamin?",
     options: ["Pyridoxine (Vitamin B6)", "Niacin", "Cobalamin", "Thiamine"],
     answer: 0,
@@ -529,6 +599,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-073",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Folic acid supplementation prior to conception and in early pregnancy prevents what anomaly?",
     options: ["Neural tube defects (spina bifida, anencephaly)", "Cleft lip only", "Congenital heart block"],
     answer: 0,
@@ -537,6 +608,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-074",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Single well-demarcated liver mass with central gray-white stellate scar containing thick-walled dystrophic vessels.",
     options: ["Focal nodular hyperplasia (FNH)", "Cholangiocarcinoma", "Hepatic adenoma", "Hepatocellular carcinoma"],
     answer: 0,
@@ -545,6 +617,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-075",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Most common etiology of impaired intrahepatic sinusoidal blood flow in adults?",
     options: ["Schistosomiasis", "Budd-Chiari syndrome", "Cirrhosis", "Portal vein thrombosis"],
     answer: 2,
@@ -553,6 +626,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-076",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Patient with hematemesis, orthostatic hypotension, and melena. Investigation of choice?",
     options: ["Esophagogastroduodenoscopy (EGD)", "Angiography", "RBC scan", "Colonoscopy", "Barium swallow"],
     answer: 0,
@@ -561,6 +635,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-077",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Hematochezia; colonoscopy reveals active bleeding diverticulum. Definitive treatment modality?",
     options: ["Oral PPI", "IV antibiotic", "Angiography alone", "Endoscopic hemoclip / Argon plasma coagulation / Surgery"],
     answer: 3,
@@ -569,6 +644,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-078",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Painless slow-growing mass in front of ear (parotid). Histology shows epithelial ductal structures mixed with myxoid/chondroid mesenchymal stroma.",
     options: ["Pleomorphic adenoma (Mixed tumor of salivary gland)", "Mucoepidermoid carcinoma", "Warthin tumor"],
     answer: 0,
@@ -577,6 +653,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-079",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Antiemetic agent with greatest efficacy for preventing acute and delayed chemotherapy-induced nausea and vomiting (CINV)?",
     options: ["Dimenhydrinate", "Metoclopramide", "Aprepitant", "Domperidone"],
     answer: 2,
@@ -585,6 +662,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-080",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Mechanism of action of Aprepitant?",
     options: ["5-HT3 antagonist", "H1 antagonist", "D2 antagonist", "NK1 receptor antagonist"],
     answer: 3,
@@ -593,6 +671,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-082",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "5-year-old child given aspirin for viral infection develops acute encephalopathy and liver failure. Microscopic finding in liver?",
     options: ["Mallory-Denk bodies", "Macrovesicular steatosis", "Microvesicular steatosis", "Zone 3 necrosis"],
     answer: 2,
@@ -601,6 +680,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-083",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which cell type is primarily responsible for excessive collagen deposition and extracellular matrix synthesis in liver cirrhosis?",
     options: ["Kupffer cell", "Hepatic Stellate cell (Ito cell)", "Hepatocyte", "Sinusoidal endothelial cell"],
     answer: 1,
@@ -609,6 +689,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-084",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Toddler with severe vitamin D deficiency. Hallmark physical deformity?",
     options: ["Scurvy", "Tetany", "Craniotabes only", "Bowing legs (Rickets)"],
     answer: 3,
@@ -617,6 +698,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-085",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "What is the microscopic diagnostic hallmark of acute appendicitis?",
     options: ["Submucosal lymphoid hyperplasia", "Neutrophilic infiltration of the muscularis propria", "Mucosal erosion only"],
     answer: 1,
@@ -625,6 +707,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-086",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antiemetic drug class acts via 5-HT3 serotonin receptor antagonism?",
     options: ["Compounds ending in '-setron' (e.g., Granisetron, Ondansetron)", "Compounds ending in '-tidine'"],
     answer: 0,
@@ -633,6 +716,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-087",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "สมชายดื่มเหล้าต้มเถื่อน 30 Degree alcohol วันละ 1 ลิตร สมชายจะได้รับแอลกอฮอล์วันละกี่กรัม?",
     options: ["240 กรัม", "300 กรัม", "420 กรัม", "450 กรัม", "360 กรัม"],
     answer: 0,
@@ -641,6 +725,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-088",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "ผู้ป่วยชายอายุ 65 ปี มีอาการตาเหลืองมา 1 เดือน ไม่อยากอาหาร และน้ำหนักลด 8 kg ตรวจร่างกายพบ icteric sclera และ hepatomegaly ผล ultrasound พบ mass ที่ porta hepatis ร่วมกับมี intrahepatic bile duct dilatation. Pathophysiology?",
     options: ["Decrease bilirubin excretion into common bile duct / biliary obstruction", "Increase bilirubin excretion into glomeruli", "Increase uptake bilirubin", "Decrease conjugation bilirubin"],
     answer: 0,
@@ -649,6 +734,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-089",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Which clinical laboratory parameter specifically assesses the synthetic function of the liver?",
     options: ["Alkaline phosphatase", "Total bilirubin", "Serum albumin and Prothrombin time (INR)", "AST and ALT"],
     answer: 2,
@@ -657,6 +743,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-090",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Which symptom is NOT typically related to oropharyngeal dysphagia?",
     options: ["Nasal regurgitation", "Choking on solids", "Coughing while swallowing", "Heartburn"],
     answer: 3,
@@ -665,6 +752,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-091",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "79-year-old man had brain stroke 2 weeks ago; presents with difficulty swallowing and nasal regurgitation for 1 week. Mechanism?",
     options: ["Esophageal uncoordinated contraction", "LES failure", "Epiglottis blocks larynx", "Soft palate does not elevate to close nasopharynx", "Upper esophagus not relaxing"],
     answer: 3,
@@ -673,6 +761,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-092",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "50-year-old man with vascular thrombosis on regular aspirin presents with black stools and fatigue. Gastroscopy reveals scattered bleeding mucosal petechiae in stomach. Diagnosis?",
     options: ["Curling ulcer", "Acute erosive gastritis", "Autoimmune gastritis", "Chronic atrophic gastritis", "H. pylori gastritis"],
     answer: 1,
@@ -681,6 +770,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-093",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "45-year-old obese man with chronic heartburn; endoscopy shows velvety red mucosal tongues extending above gastroesophageal junction. Histological feature?",
     options: ["Stratified squamous hyperplasia", "Transmural lymphoid follicles", "Diffuse signet ring cell infiltration", "Metaplastic columnar epithelium with goblet cells (Barrett's)"],
     answer: 3,
@@ -689,6 +779,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-094",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "35-year-old with chronic epigastric pain; antral biopsy reveals dense infiltrate of lymphocytes and plasma cells in lamina propria. Most likely etiology?",
     options: ["Autoimmune gastritis", "Peptic ulcer disease", "Helicobacter pylori"],
     answer: 2,
@@ -697,6 +788,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-095",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Epigastric pain, progressive weight loss, large firm Virchow's node; endoscopy shows diffusely thickened, rigid gastric wall with flattened mucosal folds. Biopsy finding?",
     options: ["Neoplastic signet ring cell infiltration", "Vascular proliferation", "Dysplastic gland proliferation", "Submucosal stromal cell proliferation"],
     answer: 0,
@@ -705,6 +797,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-096",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "70-year-old man with progressive solid food dysphagia for 3 months, 4 kg weight loss, and iron deficiency anemia. Most likely diagnosis?",
     options: ["Esophageal scleroderma", "Achalasia", "Zenker diverticulum", "Esophageal carcinoma"],
     answer: 3,
@@ -713,6 +806,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-097",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "10-year-old child with RLQ pain; normal appendix but an ileal outpouching located 60 cm proximal to the ileocecal valve is identified. Embryological defect?",
     options: ["Failure of gut rotation", "Failure of vitelline (omphalomesenteric) duct to obliterate"],
     answer: 1,
@@ -721,6 +815,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-098",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which condition causes neonatal kernicterus secondary to massive unconjugated bilirubin accumulation?",
     options: ["Ineffective erythropoiesis / Severe hemolytic disease", "Biliary atresia", "Rotor syndrome"],
     answer: 0,
@@ -729,6 +824,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-099",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Patient with elevated AST/ALT, normal ALP, and Kayser-Fleischer corneal rings. Which biochemical parameter is decreased?",
     options: ["Ferritin", "Alpha-1-antitrypsin", "Copper excretion", "Serum ceruloplasmin"],
     answer: 3,
@@ -737,6 +833,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-101",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "60-year-old with alcoholic cirrhosis presents with ascites, gynecomastia, and palmar erythema. Pathogenesis of gynecomastia?",
     options: ["Decreased hepatic metabolism of estrogen", "Increased prolactin secretion", "Decreased testosterone synthesis"],
     answer: 0,
@@ -745,6 +842,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-102",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "25-year-old woman with previous history of ruptured appendectomy presents with abdominal distension and small bowel obstruction. Most likely cause?",
     options: ["Fibrous peritoneal adhesions", "Intussusception", "Diverticulosis"],
     answer: 0,
@@ -753,6 +851,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-103",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "48-year-old female with gallstone disease; CT reveals parenchymal calcification in the pancreas and acute abdominal pain. Laboratory finding?",
     options: ["Decreased ALP", "Increased serum amylase and lipase", "Decreased ALT"],
     answer: 1,
@@ -761,6 +860,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-104",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "70-year-old male with an irregular cystic liver abscess containing chocolate-colored 'anchovy paste' pus. Causative organism?",
     options: ["Giardia lamblia", "Entamoeba histolytica", "Escherichia coli", "Clostridioides difficile"],
     answer: 1,
@@ -769,6 +869,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-106",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient with chronic HCV infection presents with sudden hematemesis and hemorrhagic shock. Most common source?",
     options: ["Gastric cancer", "Peptic ulcer", "Mallory-Weiss tear", "Ruptured esophageal varices"],
     answer: 3,
@@ -777,6 +878,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-107",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "19-year-old screened due to strong family history; colonoscopy reveals >1000 adenomatous polyps coating the entire colorectal mucosa. Mutated gene?",
     options: ["MSH2", "MLH1", "SMAD4", "KRAS", "APC"],
     answer: 4,
@@ -785,6 +887,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-110",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Most effective pharmacological class for healing erosive esophagitis and treating GERD?",
     options: ["Antacids", "Prokinetics", "Proton Pump Inhibitors (Omeprazole, Esomeprazole)", "H2 receptor antagonists"],
     answer: 2,
@@ -793,6 +896,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-111",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Zollinger-Ellison syndrome patient taking Cimetidine for 7 weeks. Which adverse reactions can occur?",
     options: ["Hypoglycemia", "Hepatic CYP450 inhibition & Anti-androgenic effect (gynecomastia)"],
     answer: 1,
@@ -801,6 +905,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-112",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "What suffix characterizes competitive histamine H2-receptor antagonist drugs?",
     options: ["'-prazole'", "'-idine' (Ranitidine, Cimetidine, Famotidine)"],
     answer: 1,
@@ -809,6 +914,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-113",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which medication should be avoided in infants because it can cause toxic paralytic ileus?",
     options: ["Racecadotril", "Lactulose", "Diphenoxylate", "Zinc"],
     answer: 2,
@@ -817,6 +923,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-114",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "All of the following are recognized adverse effects of long-term PPI use EXCEPT?",
     options: ["Decreased vitamin B12 absorption", "Hip fractures", "Hypogastrinemia", "Acute interstitial nephritis", "Clostridioides difficile infection"],
     answer: 2,
@@ -825,6 +932,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-115",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which laxative agent should NOT be used for immediate acute relief of constipation due to slow onset of action?",
     options: ["Magnesium hydroxide", "Psyllium seed", "Bisacodyl", "Glycerin"],
     answer: 1,
@@ -833,6 +941,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-116",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which medication can cause drug-induced extrapyramidal symptoms and acute dystonic reactions?",
     options: ["Metoclopramide", "Racecadotril", "Aprepitant", "Granisetron", "Lubiprostone"],
     answer: 0,
@@ -841,6 +950,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-117",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "45-year-old with progressive dysphagia to solids and liquids for 6 months; barium study shows dilated esophagus with bird-beak tapering. Diagnosis?",
     options: ["Reflux esophagitis", "Esophageal cancer", "Achalasia (Barium esophagogram)"],
     answer: 2,
@@ -849,6 +959,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-118",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "65-year-old male with altered bowel habits, hematochezia, weight loss, and suspected colonic cancer. Suitable fluoroscopic examination?",
     options: ["Ultrasound", "Plain abdominal film", "Barium enema"],
     answer: 2,
@@ -857,6 +968,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-119",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "According to Roentgen X-ray physical density, what structure produces the most hyperdense (radiopaque) appearance on plain radiography?",
     options: ["Liver", "Trachea", "Lung", "Spleen", "Spine / Bone"],
     answer: 4,
@@ -865,6 +977,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-120",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "30-year-old pregnant woman with epigastric pain suspected of acute cholelithiasis. Investigation of choice?",
     options: ["MRI", "CT abdomen", "Plain X-ray", "Ultrasound abdomen"],
     answer: 3,
@@ -873,6 +986,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-121",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Patient with cholangiocarcinoma causing obstructive jaundice and bile duct dilation. Palliative interventional procedure?",
     options: ["Radiofrequency ablation", "TACE", "PEIT", "Percutaneous transhepatic biliary drainage (PTBD)"],
     answer: 3,
@@ -881,6 +995,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-122",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Patient presents with pruritus and icteric sclera. Labs show elevated ALP, elevated cholesterol, positive AMA, and negative ANA. Diagnosis?",
     options: ["Primary biliary cholangitis (PBC)", "Primary sclerosing cholangitis", "Alpha-1 antitrypsin deficiency", "Choledocholithiasis", "Autoimmune hepatitis"],
     answer: 0,
@@ -889,6 +1004,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-123",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "What is the mechanism of action of omeprazole?",
     options: ["H2 receptor antagonist", "Irreversibly inhibit H+/K+ ATPase", "Acid neutralization", "Reversibly inhibit H+/K+ ATPase", "Prostaglandin analog"],
     answer: 1,
@@ -897,6 +1013,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-124",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "35-year-old female with progressive dysphagia and weight loss, suspected esophageal cancer. Investigation of choice?",
     options: ["CT whole abdomen", "MRI", "Barium swallow / Esophagoscopy", "Barium enema"],
     answer: 2,
@@ -905,6 +1022,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-125",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "60-year-old man with history of antibiotic use presents with profuse watery diarrhea and pseudomembranous exudates. Primary pathogenic mechanism of C. difficile?",
     options: ["Biofilm formation", "Heat-stable enterotoxin", "Production of enterotoxin (Toxin A) and cytotoxin (Toxin B)", "Normal flora inhibition alone", "Direct epithelial invasion"],
     answer: 2,
@@ -913,6 +1031,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-126",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Mr. Prasit diagnosed with alcoholism; exam shows nodular liver and ascites. Which blood chemistry test is most useful for predicting prognosis?",
     options: ["PTT / Prothrombin Time", "Serum protein / Albumin", "AST", "Creatinine", "ALT"],
     answer: 0,
@@ -921,6 +1040,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-128",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug is chemically related to strong opioids and decreases GI motility to treat diarrhea?",
     options: ["Granisetron", "Diphenoxylate", "Magnesium hydroxide", "Metoclopramide"],
     answer: 1,
@@ -929,6 +1049,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-129",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Jaundice patient with dilated intrahepatic and extrahepatic bile ducts on ultrasound. Likely cause?",
     options: ["Carcinoma of 2nd part of duodenum", "Cholangiocarcinoma / Periampullary neoplasm"],
     answer: 1,
@@ -937,6 +1058,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-130",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Which structure exhibits the most hypodense (radiolucent / black) appearance on plain X-rays?",
     options: ["Liver", "Peritoneal fat", "Bone", "Lung / Air", "Visceral fat"],
     answer: 3,
@@ -945,6 +1067,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-131",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "55-year-old woman with jaundice and acute hepatitis due to HBV and HDV coinfection. Transmission route of Hepatitis D?",
     options: ["Fecal-oral", "Foodborne", "Vector", "Airborne", "Blood and parenteral / sexual contact"],
     answer: 4,
@@ -953,6 +1076,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-132",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "50-year-old female with hepatomegaly, spider nevi, and AFP 400 ng/mL. Most appropriate confirmatory investigation?",
     options: ["Triphasic CT abdomen / Dynamic MRI", "Liver elastogram", "Liver biopsy", "Hepatic angiography"],
     answer: 0,
@@ -961,6 +1085,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-133",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "28-year-old male develops diarrhea and abdominal pain 48 hours after consuming Southeast Asian street food. Organism?",
     options: ["Enterotoxigenic E. coli (ETEC)", "Shigella spp."],
     answer: 0,
@@ -969,6 +1094,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-134",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Stool examination reveals greasy, pale, bulky, foul-smelling stools that float. Primary pathophysiology?",
     options: ["Microscopic colitis", "Chronic pancreatitis", "Fat malabsorption (Steatorrhea)", "Celiac disease"],
     answer: 2,
@@ -977,6 +1103,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-135",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Modified acid-fast stain of stool from an immunocompromised patient showing round, 4-5 micron red-stained oocysts. Diagnosis?",
     options: ["Cystoisosporiasis", "Cryptosporidiosis", "Cyclosporiasis", "Microsporidiosis"],
     answer: 1,
@@ -985,6 +1112,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-136",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Patient with Hepatocellular Carcinoma (HCC), Child-Pugh Class A, solitary 2 cm tumor away from major vessels. Curative treatment?",
     options: ["Microwave ablation / Radiofrequency ablation", "Systemic chemotherapy"],
     answer: 0,
@@ -993,6 +1121,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-137",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Patient with chronic liver disease, hypoalbuminemia, and ascites. Underlying hemodynamic pathophysiology?",
     options: ["Decreased endothelin-1", "Splanchnic arterial vasodilation driven by excess Nitric Oxide (NO)"],
     answer: 1,
@@ -1001,6 +1130,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-138",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "30-year-old male with chronic abdominal pain suspected of small bowel mucosal lesion. Radiographic investigation of choice?",
     options: ["Small bowel follow-through (SBFT) / Enteroclysis", "MRI", "Barium swallow", "Barium enema"],
     answer: 0,
@@ -1009,6 +1139,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-139",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "30-year-old female with chronic diarrhea, bloating, and iron deficiency anemia. Duodenal biopsy reveals crypt hyperplasia and villous blunting. Pathogenic mechanism?",
     options: ["B-cell mediated gluten allergy", "IgE mediated hypersensitivity", "T-cell mediated immune response to gliadin", "IgA mediated hypersensitivity", "IgG mediated response"],
     answer: 2,
@@ -1017,6 +1148,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-140",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which neuroanatomical site is primarily damaged by unconjugated bilirubin toxicity in neonatal kernicterus?",
     options: ["Frontal lobe", "Basal ganglia (globus pallidus, subthalamic nucleus)", "Cerebrum", "Temporal lobe"],
     answer: 1,
@@ -1025,6 +1157,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-141",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug selectively inhibits gastric histamine H2 receptors?",
     options: ["Misoprostol", "Omeprazole", "Ranitidine", "Hydroxyzine"],
     answer: 2,
@@ -1033,6 +1166,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-142",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "28-year-old man with abdominal pain and bloody diarrhea; colonoscopy reveals continuous, superficial mucosal inflammation extending proximally from the rectum. Diagnosis?",
     options: ["Crohn's disease", "Celiac disease", "Ulcerative colitis"],
     answer: 2,
@@ -1041,6 +1175,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-143",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "26-year-old woman with lower abdominal pain and loose stools for 5 months, normal exam, normal CBC, no family history of CRC. Management?",
     options: ["Stool occult blood test", "Schedule follow-up and dietary advice (IBS)", "Start laxative", "Ultrasound", "Colonoscopy"],
     answer: 1,
@@ -1049,6 +1184,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-144",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "30-year-old woman with recurrent periumbilical crampy pain relieved by defecation, loose stools for 6 months, exams normal. Diagnosis?",
     options: ["Functional dyspepsia", "Ulcerative colitis", "Ischemic colitis", "Abdominal migraine", "Irritable bowel syndrome (IBS)"],
     answer: 4,
@@ -1057,6 +1193,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-145",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "55-year-old man with 40-year alcohol abuse, hepatomegaly, and portal hypertension. Which finding is a direct sequela of portal hypertension?",
     options: ["Palmar erythema", "Testicular atrophy", "Spider nevi", "Gynecomastia", "Splenomegaly (Congestive)"],
     answer: 4,
@@ -1065,6 +1202,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-146",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Man with massive hematemesis and shock; endoscopy detects a visible pulsatile bleeding arterial vessel in gastric ulcer bed that cannot be controlled endoscopically. Best next step?",
     options: ["Norepinephrine", "Dopamine", "Albumin", "Transcatheter arterial embolization (TAE) / Surgical ligation"],
     answer: 3,
@@ -1073,6 +1211,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-147",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "คนไข้มี brain tumor, upper GI bleeding ตรวจพบจุดเลือดออกที่ stomach and duodenum. Type of ulcer?",
     options: ["Cushing ulcer", "Cameron ulcer", "Peptic ulcer", "Curling ulcer"],
     answer: 0,
@@ -1081,6 +1220,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-148",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "มีก้อน redness nodule at oral cavity, histological biopsy พบ proliferating capillary channels and inflammatory cells. Diagnosis?",
     options: ["Leukoplakia", "Aphthous ulcer", "Pyogenic granuloma (Lobular capillary hemangioma)"],
     answer: 2,
@@ -1089,6 +1229,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-149",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Neonate with non-bilious projectile vomiting, olive-shaped soft tissue mass in epigastrium. Diagnosis?",
     options: ["Congenital hypertrophic pyloric stenosis", "Annular pancreas", "Duodenal atresia"],
     answer: 0,
@@ -1097,6 +1238,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-150",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Vomiting of fresh blood in patient with alcoholic cirrhosis and portal hypertension. Most likely condition?",
     options: ["Ruptured esophageal varices", "Gastric cancer", "Mallory-Weiss tear"],
     answer: 0,
@@ -1105,6 +1247,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-151",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "CT shows diffuse swelling of pancreas with peripancreatic fluid collection. Which laboratory test confirms the diagnosis?",
     options: ["Elevated alkaline phosphatase", "Decreased ALT", "Increased serum amylase and lipase"],
     answer: 2,
@@ -1113,6 +1256,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-152",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Female taking oral contraceptive pills (OCPs) found to have a well-circumscribed solitary hepatic mass that regresses upon drug discontinuation. Diagnosis?",
     options: ["Hepatocellular carcinoma", "Focal nodular hyperplasia", "Hepatic adenoma (Hepatocellular adenoma)"],
     answer: 2,
@@ -1121,6 +1265,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-153",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Histology showing pericellular and sinusoidal fibrosis. Which hepatic cell is responsible for synthesizing excessive collagen?",
     options: ["Hepatic Stellate cell (Ito cell)", "Kupffer cell", "Hepatocyte", "Sinusoidal endothelial cell"],
     answer: 0,
@@ -1129,6 +1274,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-154",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Female with dark urine, jaundice, and low G6PD enzyme level after antimalarial ingestion. Mechanism of jaundice?",
     options: ["Intravascular hemolysis (Pre-hepatic)", "Biliary obstruction", "Extravascular hemolysis"],
     answer: 0,
@@ -1137,6 +1283,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-155",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Which of the following is a clinical manifestation of intestinal nutrient malabsorption?",
     options: ["Iron overload", "Hypercalcemia", "Steatorrhea"],
     answer: 2,
@@ -1145,6 +1292,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-156",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "A person drinks 1 liter of 40-degree liquor daily. How many grams of pure ethanol are consumed per day?",
     options: ["480 g", "280 g", "320 g", "400 g"],
     answer: 2,
@@ -1153,6 +1301,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-157",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "65-year-old male with jaundice, hepatomegaly; ultrasound shows porta hepatis mass obstructing biliary outflow with intrahepatic duct dilation. Pathophysiology?",
     options: ["Decreased excretion of conjugated bilirubin into common bile duct", "Decreased conjugation of bilirubin", "Increased bilirubin uptake"],
     answer: 0,
@@ -1161,6 +1310,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-158",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Newborn with excessive salivation, choking, and inability to feed; nasogastric tube coils in proximal esophagus. Diagnosis?",
     options: ["Duodenal atresia", "Congenital esophageal atresia / stenosis", "Pyloric stenosis"],
     answer: 1,
@@ -1169,6 +1319,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-159",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Barium study shows smooth, circumferential ring-like mucosal constriction in the lower esophagus above squamocolumnar junction. Diagnosis?",
     options: ["Esophageal web", "Zenker diverticulum", "Schatzki ring (Lower esophageal mucosal ring)"],
     answer: 2,
@@ -1177,6 +1328,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-160",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "17-year-old female presents with acute right lower abdominal pain and vomiting. What is the essential initial diagnostic test?",
     options: ["CT abdomen", "MRI", "Acute abdominal series", "Ultrasound", "Urine pregnancy test (UPT)"],
     answer: 4,
@@ -1185,6 +1337,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-162",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Patient with acid hypersecretion treated with Cimetidine. Important pharmacological consequence?",
     options: ["Hyperuricemia", "Inhibition of hepatic CYP450 drug metabolism", "Hypoglycemia"],
     answer: 1,
@@ -1193,6 +1346,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-163",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antidiarrheal drug is contraindicated in young children because it induces paralytic ileus?",
     options: ["Psyllium", "Diphenoxylate", "Zinc", "Racecadotril"],
     answer: 1,
@@ -1201,6 +1355,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-164",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which GI drug is strictly contraindicated during pregnancy due to abortifacient uterotonic properties?",
     options: ["Misoprostol", "Omeprazole", "Sucralfate", "Cimetidine"],
     answer: 0,
@@ -1209,6 +1364,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-166",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which first-generation antihistamine is clinically effective for the prevention of vestibular motion sickness?",
     options: ["Cetirizine", "Fexofenadine", "Dimenhydrinate", "Loratadine"],
     answer: 2,
@@ -1217,6 +1373,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-167",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which Cytochrome P450 isoenzyme is most strongly inhibited by Omeprazole?",
     options: ["CYP1A2", "CYP2D6", "CYP2E1", "CYP2C19"],
     answer: 3,
@@ -1225,6 +1382,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-168",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antiemetic class acts as selective 5-HT3 receptor antagonists for chemotherapy emesis?",
     options: ["Agents ending with '-setron' (e.g. Granisetron, Ondansetron)", "Antacids"],
     answer: 0,
@@ -1233,6 +1391,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-169",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Solitary 10 cm pyogenic liver abscess in right lobe. Treatment of choice?",
     options: ["TACE", "PTBD", "PEIT", "Percutaneous catheter drainage (PCD)"],
     answer: 3,
@@ -1241,6 +1400,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-170",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Radiological fluoroscopic system using digital image processing to visualize arterial tree by subtracting non-vascular structures?",
     options: ["Ultrasound", "Conventional MRI", "Digital Subtraction Angiography (DSA)"],
     answer: 2,
@@ -1249,6 +1409,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-171",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Newborn fails to pass meconium in first 48 hours; barium enema shows narrow rectum with proximal megacolon. Rectal suction biopsy confirms absence of ganglion cells. Diagnosis?",
     options: ["IBS", "Hirschsprung disease (Congenital aganglionic megacolon)", "Chagas disease"],
     answer: 1,
@@ -1257,6 +1418,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-172",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "30-year-old male with binge drinking history has multiple episodes of severe retching followed by acute hematemesis. Diagnosis?",
     options: ["Barrett esophagus", "Esophageal varices", "Peptic ulcer", "Mallory-Weiss laceration"],
     answer: 3,
@@ -1265,6 +1427,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-173",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Which triad of findings characterizes Crohn's disease?",
     options: ["Skip lesions, transmural inflammation, and non-caseating granulomas", "Continuous superficial mucosal involvement"],
     answer: 0,
@@ -1273,6 +1436,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-175",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "40-year-old male experiences abdominal cramps, bloating, and diarrhea whenever he drinks dairy milk. Labs and stool normal. Diagnosis?",
     options: ["Bacterial enteritis", "Lactase deficiency", "Celiac disease"],
     answer: 1,
@@ -1281,6 +1445,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-177",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "50-year-old man with high fever, chills, RUQ pain, tender hepatomegaly, BT 38.8 C, mild jaundice, high ALP, normal AST/ALT. Diagnosis?",
     options: ["Acute cholecystitis", "Autoimmune hepatitis", "Liver abscess", "Acute ascending cholangitis"],
     answer: 3,
@@ -1289,6 +1454,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-178",
     topic: "Nutrition & Physiology",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the primary physiological function of sodium (Na+) in the human body?",
     options: ["Maintenance of extracellular fluid volume and osmotic balance", "Protein synthesis", "Bone mineral matrix"],
     answer: 0,
@@ -1297,6 +1463,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-180",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Parotid gland mass showing oncocytic epithelial cells forming papillary projections lined by dense lymphoid stroma with germinal centers. Diagnosis?",
     options: ["Pleomorphic adenoma", "Mucocele", "Warthin tumor (Papillary cystadenoma lymphomatosum)"],
     answer: 2,
@@ -1305,6 +1472,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-181",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Chronic alcoholic with fatty liver; liver biopsy displays widespread fat globules within hepatocytes without inflammation or collagenous fibrosis. Diagnosis?",
     options: ["Steatohepatitis", "Cirrhosis", "Hepatic steatosis (Fatty liver)"],
     answer: 2,
@@ -1313,6 +1481,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-182",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which vitamin functions as a steroid hormone to stimulate active intestinal absorption of calcium and phosphate?",
     options: ["Alpha-tocopherol", "Calcitriol (1,25-dihydroxycholecalciferol)", "Retinol", "Pyridoxine"],
     answer: 1,
@@ -1321,6 +1490,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-183",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "39-year-old man with burning chest sensation; endoscopy reveals salmon-red glandular mucosa on a white background at distal esophagus. Greatest risk?",
     options: ["Squamous cell carcinoma", "Achalasia", "Gastric ulcer", "Esophageal adenocarcinoma"],
     answer: 3,
@@ -1329,6 +1499,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-184",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Severe phosphorus deficiency in growing children impairs bone mineralization, leading to what disease?",
     options: ["Anemia", "Scurvy", "Hypertension", "Rickets"],
     answer: 3,
@@ -1337,6 +1508,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-185",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "60-year-old cirrhotic man with tense ascites and shifting dullness. Pharmacodynamic action of Spironolactone in this patient?",
     options: ["Increase renin", "Competitive antagonism of aldosterone receptors (decrease aldosterone activity)", "Inhibit vasopressin"],
     answer: 1,
@@ -1345,6 +1517,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-186",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "19-year-old with family history has hundreds of tubular adenomas across the colon on colonoscopy. Mutated tumor suppressor gene?",
     options: ["MLH1", "KRAS", "APC", "SMAD4"],
     answer: 2,
@@ -1353,6 +1526,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-187",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Roentgen density ranking: What has highest radiodensity (most radiopaque/white) on plain radiographs?",
     options: ["Bone / Spine", "Muscle", "Lung / Gas", "Liver"],
     answer: 0,
@@ -1361,6 +1535,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-188",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "38-year-old female with gallstone disease and acute epigastric pain; CT reveals swelling of pancreas with fluid. Which laboratory test is most significantly elevated?",
     options: ["Serum amylase and lipase", "Hypoglycemia", "Hyperammonemia"],
     answer: 0,
@@ -1369,6 +1544,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-190",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Congenital anterior abdominal wall defect with herniation of bowel and liver covered by a peritoneal sac at the umbilicus. Diagnosis?",
     options: ["Gastroschisis", "Omphalocele", "Pyloric stenosis", "Inguinal hernia"],
     answer: 1,
@@ -1377,6 +1553,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-191",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Most effective initial medical therapy for healing erosive GERD?",
     options: ["Antacids", "Proton Pump Inhibitors (e.g. Omeprazole)", "H2 blockers"],
     answer: 1,
@@ -1385,6 +1562,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-192",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Female on oral contraceptives found to have 5 cm well-circumscribed subcapsular liver mass which shrinks after stopping OCP. Diagnosis?",
     options: ["Hepatic adenoma", "Focal nodular hyperplasia", "Hepatocellular carcinoma"],
     answer: 0,
@@ -1393,6 +1571,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-193",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Which clinical triad of findings characterizes Gardner syndrome?",
     options: ["Hamartomas and skin pigment", "Familial adenomatous polyposis, osteomas (mandible/skull), and desmoid tumors / soft tissue cysts"],
     answer: 1,
@@ -1401,6 +1580,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-194",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Ascites in patient with positive HBsAg, positive anti-HBc, and highly elevated serum Alpha-fetoprotein. Diagnosis?",
     options: ["Hepatocellular carcinoma (HCC)", "Cholangiocarcinoma", "Hepatic abscess"],
     answer: 0,
@@ -1409,6 +1589,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-197",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which physiological factors are incorporated in the Harris-Benedict equation to estimate Basal Energy Expenditure (BEE)?",
     options: ["Sex, Weight, Height, Age, Stress factor", "Sex, Weight, Height, Age", "Activity factor alone"],
     answer: 1,
@@ -1417,6 +1598,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-198",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the normal Body Mass Index (BMI) range for adult Asian populations according to WHO criteria?",
     options: ["20.0 - 25.0 kg/m2", "18.5 - 22.99 kg/m2", "15.0 - 18.5 kg/m2"],
     answer: 1,
@@ -1425,6 +1607,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-199",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the recognized definition of a 'Functional food'?",
     options: ["Synthetic pill", "Food that delivers a targeted health benefit / active ingredient within a natural food matrix beyond basic nutrition"],
     answer: 1,
@@ -1433,6 +1616,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-201",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which essential minerals require increased dietary intake during pregnancy?",
     options: ["Iron, Zinc, and Iodine", "Sodium and chloride only"],
     answer: 0,
@@ -1441,6 +1625,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-202",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Patient on Isoniazid (INH) therapy develops peripheral neuropathy. Which vitamin is depleted?",
     options: ["Thiamine", "Pyridoxine (Vitamin B6)", "Niacin", "Riboflavin"],
     answer: 1,
@@ -1449,6 +1634,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-203",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Angular stomatitis and cheilosis are classic clinical signs of which vitamin deficiency?",
     options: ["Vitamin D", "Riboflavin (Vitamin B2)", "Vitamin C", "Vitamin E"],
     answer: 1,
@@ -1457,6 +1643,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-204",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which vitamin serves as the essential precursor for the synthesis of coenzymes FMN and FAD?",
     options: ["Thiamine (B1)", "Pantothenic acid (B5)", "Niacin (B3)", "Riboflavin (Vitamin B2)"],
     answer: 3,
@@ -1465,6 +1652,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-205",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Marathon runner collapses after profuse sweating and drinking plain hypotonic water. What electrolyte derangement occurs?",
     options: ["Hypovolemic / Exertional hyponatremia", "Hypercalcemia", "Hypernatremia"],
     answer: 0,
@@ -1473,6 +1661,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-206",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Where is the vast majority of body magnesium stored in human physiology?",
     options: ["Extracellular plasma", "Bone (skeleton) and intracellular soft tissue (muscle)"],
     answer: 1,
@@ -1481,6 +1670,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-207",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Patient admitted with massive hematochezia from bleeding colonic diverticulum. Definitive therapeutic approach?",
     options: ["Endoscopic hemoclipping / Epinephrine injection / Surgery", "Oral PPI"],
     answer: 0,
@@ -1489,6 +1679,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-208",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Patient presents with hematemesis, melena, and orthostatic hypotension. Most crucial initial diagnostic test?",
     options: ["Esophagogastroduodenoscopy (EGD) within 24 hours", "Colonoscopy", "Barium swallow"],
     answer: 0,
@@ -1497,6 +1688,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-209",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Chronic alcoholic of 20 years presents with jaundice, spider nevi, and palmar erythema. Pathophysiologic mechanism of vascular spiders?",
     options: ["Portal hypertension", "Hyperestrogenemia from impaired hepatic clearance and metabolism of estrogens"],
     answer: 1,
@@ -1505,6 +1697,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-210",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Severe acetaminophen hepatotoxicity characteristically produces which pattern of cellular damage?",
     options: ["Microvesicular steatosis only", "Centrilobular necrosis (Zone 3 coagulative necrosis)", "Periportal fibrosis"],
     answer: 1,
@@ -1513,6 +1706,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-211",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Bilirubin encephalopathy (Kernicterus) in newborns is directly caused by neurotoxic accumulation of which bilirubin fraction?",
     options: ["Conjugated diglucuronide bilirubin", "Unconjugated (indirect) free bilirubin"],
     answer: 1,
@@ -1521,6 +1715,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-213",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which synthetic opioid derivative possesses strong constipating actions via intestinal mu-receptors?",
     options: ["Metoclopramide", "Diphenoxylate", "Racecadotril"],
     answer: 1,
@@ -1529,6 +1724,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-214",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Antiemetic mechanism of Aprepitant in chemotherapy regimens?",
     options: ["Neurokinin-1 (NK1) receptor antagonism", "Dopamine D2 blockade", "5-HT3 antagonism"],
     answer: 0,
@@ -1537,6 +1733,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-215",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which pharmaceutical class demonstrates the highest efficacy and healing rates for peptic ulcer disease?",
     options: ["Proton Pump Inhibitors (PPIs)", "H2 receptor antagonists", "Antacids", "Sucralfate"],
     answer: 0,
@@ -1545,6 +1742,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-216",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Primary pharmacokinetic drug interaction mechanism of Cimetidine?",
     options: ["Broad inhibition of Cytochrome P450 enzymes (CYP1A2, 2C9, 2D6, 3A4)", "Renal tubular secretion enhancement"],
     answer: 0,
@@ -1553,6 +1751,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-218",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Why is the prostaglandin analog Misoprostol absolutely contraindicated in pregnancy?",
     options: ["Causes severe fetal hypothermia", "Causes uterine myometrial contractions and abortion / teratogenicity"],
     answer: 1,
@@ -1561,6 +1760,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-219",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antidiarrheal drug acts as an enkephalinase inhibitor suitable for treating acute watery diarrhea in children?",
     options: ["Loperamide", "Diphenoxylate", "Racecadotril"],
     answer: 2,
@@ -1569,6 +1769,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-220",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antiemetic/prokinetic agent carries a black box warning for inducing extrapyramidal symptoms and tardive dyskinesia?",
     options: ["Metoclopramide", "Ondansetron", "Aprepitant"],
     answer: 0,
@@ -1577,6 +1778,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-221",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "What dangerous cardiac arrhythmia caused the market withdrawal or restriction of Cisapride?",
     options: ["First degree AV block", "Atrial fibrillation", "QT interval prolongation and Torsades de Pointes"],
     answer: 2,
@@ -1585,6 +1787,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-222",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which clinical scenario is most characteristically associated with Vitamin B12 (Cobalamin) deficiency?",
     options: ["Anemia accompanied by neurological deficits (subacute combined degeneration)", "Microcytic hypochromic anemia with koilonychia"],
     answer: 0,
@@ -1593,6 +1796,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-223",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Squamous metaplasia of the urinary tract epithelium due to Vitamin A deficiency predisposes to what complication?",
     options: ["Asthma", "Nephrolithiasis (urinary tract calculus)", "Glomerulonephritis"],
     answer: 1,
@@ -1601,6 +1805,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-224",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Margarine is industrially manufactured through which chemical process?",
     options: ["Partial hydrogenation of unsaturated vegetable oils producing trans fatty acids", "Direct animal fat churning"],
     answer: 0,
@@ -1609,6 +1814,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-225",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which chronic degenerative vascular disease is directly promoted by long-term caloric and saturated fat overconsumption?",
     options: ["Atherosclerosis", "Scurvy", "Beriberi", "Rickets"],
     answer: 0,
@@ -1617,6 +1823,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-226",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Enteral nutrition formulation most appropriate for an un-dialyzed patient with chronic kidney disease?",
     options: ["High protein high mineral", "High calorie density with restricted protein, low sodium, potassium, and phosphorus"],
     answer: 1,
@@ -1625,6 +1832,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-227",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which triad of micronutrients requires compulsory supplementation in pregnant women?",
     options: ["Copper, Manganese, and Cobalt", "Iron, Zinc, and Iodine"],
     answer: 1,
@@ -1633,6 +1841,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-228",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "True/False statement regarding vitamin toxicity: Fat-soluble vitamins are significantly more likely to cause toxicity upon supplementation than water-soluble vitamins.",
     options: ["True", "False"],
     answer: 0,
@@ -1641,6 +1850,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-229",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Severe deficiency of Vitamin A results in keratinization of the cornea and night blindness, collectively termed?",
     options: ["Pellagra", "Osteomalacia", "Rickets", "Xerophthalmia"],
     answer: 3,
@@ -1649,6 +1859,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-230",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Defective mineralization of bone matrix in adults caused by vitamin D deficiency is termed?",
     options: ["Osteoporosis", "Osteomalacia", "Paget disease"],
     answer: 1,
@@ -1657,6 +1868,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-231",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which physiological factor is directly associated with a decline in Basal Energy Expenditure (BEE)?",
     options: ["Hyperthyroidism", "Severe fever", "Male gender", "Advanced elderly age"],
     answer: 3,
@@ -1665,6 +1877,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-232",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which endocrine symptom is characteristically present in young females suffering from Anorexia Nervosa?",
     options: ["Hypercalcemia", "Menorrhagia", "Amenorrhea (hypogonadotropic hypogonadism)"],
     answer: 2,
@@ -1673,6 +1886,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-233",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which two major inorganic mineral ions constitute the crystalline lattice of bone hydroxyapatite?",
     options: ["Sodium and Potassium", "Calcium and Phosphorus (Phosphate)", "Iron and Magnesium"],
     answer: 1,
@@ -1681,6 +1895,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-234",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which toxic chemical contaminant is generated during the acid-hydrolysis manufacture of fermented vegetable protein?",
     options: ["3-MCPD (3-monochloropropane-1,2-diol)", "Aflatoxin", "Saxitoxin"],
     answer: 0,
@@ -1689,6 +1904,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-235",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which statement is correct regarding monomeric (elemental) enteral nutrition formulas?",
     options: ["Low osmolarity and great taste", "Contains free amino acids, requires minimal digestion, but has higher osmolarity and unpleasant taste"],
     answer: 1,
@@ -1697,6 +1913,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-236",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which vitamin must be routinely administered at birth to prevent hemorrhagic disease of the newborn / intracranial bleeding?",
     options: ["Vitamin K1 (Phylloquinone)", "Vitamin E", "Vitamin D3", "Vitamin C"],
     answer: 0,
@@ -1705,6 +1922,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-237",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "The clinical triad of dermatitis, diarrhea, and dementia (Pellagra) is caused by deficiency of which vitamin?",
     options: ["Pyridoxine (B6)", "Niacin (Vitamin B3)", "Riboflavin (B2)", "Thiamine (B1)"],
     answer: 1,
@@ -1713,6 +1931,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-238",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "A marathon runner collapses with confusion and seizures following excessive plain water ingestion. What condition is present?",
     options: ["Hypermagnesemia", "Hypovolemic / Dilutional hyponatremia", "Hyperphosphatemia"],
     answer: 1,
@@ -1721,6 +1940,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-239",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Villager drinking mineralized ground river water presents with nephrolithiasis. Urinary examination abnormality?",
     options: ["Glucosuria", "Hypercalciuria", "Hypocalciuria"],
     answer: 1,
@@ -1729,6 +1949,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-240",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Beriberi (thiamine deficiency) is least likely to develop in populations that consume which dietary staple?",
     options: ["Unpolished brown rice", "Polished white rice", "Raw fermented fish"],
     answer: 0,
@@ -1737,6 +1958,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-242",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which two major inorganic electrolytes maintain the resting membrane potential and nerve impulse conduction in neural cells?",
     options: ["Phosphorus and Iron", "Sodium and Potassium", "Calcium and Magnesium"],
     answer: 1,
@@ -1745,6 +1967,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-243",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Young woman taking acne medication gives birth to an infant with severe craniofacial and cardiac malformations. Which teratogenic drug was taken?",
     options: ["Isotretinoin (13-cis-retinoic acid)", "Erythromycin", "Benzoyl peroxide"],
     answer: 0,
@@ -1753,6 +1976,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-244",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Patient presents with bleeding swollen gums, perifollicular corkscrew hemorrhages, and poor wound healing. Diagnosis?",
     options: ["Vitamin K deficiency", "Thrombocytopenia", "Vitamin C deficiency (Scurvy)"],
     answer: 2,
@@ -1761,6 +1985,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-245",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which vitamin provides the essential core backbone for the biochemical synthesis of Coenzyme A (CoA-SH)?",
     options: ["Pantothenic acid (Vitamin B5)", "Thiamine (B1)", "Pyridoxine (B6)", "Ascorbic acid"],
     answer: 0,
@@ -1769,6 +1994,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-246",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which vitamin serves as an essential cofactor in the oxidative decarboxylation of pyruvate to generate acetyl-CoA for acetylcholine?",
     options: ["Vitamin E", "Thiamine (Vitamin B1)", "Riboflavin"],
     answer: 1,
@@ -1777,6 +2003,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-247",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the recommended macronutrient energy distribution ratio (Carbohydrate : Protein : Fat) for a balanced diet in healthy adults?",
     options: ["55-60% Carbohydrate : 10-15% Protein : 25-30% Fat", "40 : 30 : 30", "20 : 40 : 40"],
     answer: 0,
@@ -1785,6 +2012,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-248",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "44-year-old female with malaise, icterus, mild RUQ tenderness; AST 79, Total bilirubin 3.3, Direct bilirubin 2.7. Biopsy 1 year later shows minimal necrosis and chronic hepatitis. Probable virus?",
     options: ["HAV", "HEV", "HCV", "HBV", "Coinfection HepB and HepD"],
     answer: 2,
@@ -1793,6 +2021,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-249",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient with history of myocardial infarction taking regular aspirin presents with melena and multiple gastric petechial bleeding spots. Diagnosis?",
     options: ["Acute erosive gastritis", "H. pylori infection", "Autoimmune gastritis", "Curling ulcer"],
     answer: 0,
@@ -1801,6 +2030,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-250",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "40-year-old male with heartburn and epigastric pain without previous medication; upper endoscopy shows normal esophageal and gastric mucosa (NERD). Management?",
     options: ["Oral proton pump inhibitor (PPI)", "Consult for surgery", "No further treatment", "Endoscopic therapy"],
     answer: 0,
@@ -1809,6 +2039,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-251",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Cirrhotic woman with abdominal pain, anorexia, and 8 kg weight loss; physician suspects hepatocellular carcinoma. Most appropriate diagnostic investigation?",
     options: ["LFT", "Triphasic dynamic contrast-enhanced CT abdomen", "MRCP", "ERCP", "Ultrasound"],
     answer: 1,
@@ -1817,6 +2048,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-252",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which medication functions as a selective histamine H2-receptor antagonist?",
     options: ["Misoprostol", "Hydroxyzine", "Omeprazole", "Cisapride", "Famotidine"],
     answer: 4,
@@ -1825,6 +2057,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-253",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "What is the primary interventional radiology procedure for draining a solitary 10 cm pyogenic liver abscess?",
     options: ["Biopsy", "Percutaneous catheter drainage (PCD)", "TACE", "PTBD", "PEIT"],
     answer: 1,
@@ -1833,6 +2066,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-254",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Which disease condition causes direct (conjugated) hyperbilirubinemia?",
     options: ["Blood group incompatibility", "Thalassemia", "Periampullary adenocarcinoma", "Gilbert syndrome", "Crigler-Najjar syndrome"],
     answer: 2,
@@ -1841,6 +2075,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-255",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which dietary chemical mycotoxin is a recognized high-potency carcinogen causing Hepatocellular Carcinoma?",
     options: ["Acetaminophen", "Aflatoxin B1", "Ferrous sulfate", "Amanita phalloides"],
     answer: 1,
@@ -1849,6 +2084,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-256",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antidiarrheal compound is chemically related to strong opioids?",
     options: ["Diphenoxylate", "Aluminium hydroxide", "Granisetron", "Metoclopramide"],
     answer: 0,
@@ -1857,6 +2093,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-257",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Young patient with uninvestigated dyspepsia; physical exam and baseline lab tests normal. Initial pharmacological management?",
     options: ["Oral Proton Pump Inhibitor (Omeprazole)", "Alprazolam", "Isphaghyla husk", "Senna"],
     answer: 0,
@@ -1865,6 +2102,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-258",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Suspicion of gastric mucosal or structural submucosal lesion. Initial radiographic fluoroscopic study?",
     options: ["Upper GI series (double contrast)", "Barium enema", "Barium swallow"],
     answer: 0,
@@ -1873,6 +2111,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-259",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "To reduce bleeding pressure from bleeding esophageal varices, interventional radiology / shunt surgery targets which venous inflow pathway?",
     options: ["Left gastric vein (Coronary vein)", "Splenic vein"],
     answer: 0,
@@ -1881,6 +2120,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-260",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Female with low G6PD takes oxidant medication; develops acute jaundice and dark Coca-Cola colored urine. Pathophysiology?",
     options: ["Extravascular hemolysis", "Intravascular hemolysis", "Cholestasis"],
     answer: 1,
@@ -1889,6 +2129,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-262",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which pharmacological class provides the most effective acid suppression for healing peptic ulcers?",
     options: ["Proton Pump Inhibitors (PPIs)", "H2 blockers"],
     answer: 0,
@@ -1897,6 +2138,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-263",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "What are the clinical components of Gardner syndrome?",
     options: ["Colonic adenomatous polyposis, osteomas of the skull/mandible, and soft tissue desmoid tumors", "Mucocutaneous pigmentation"],
     answer: 0,
@@ -1905,6 +2147,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-264",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Gastrointestinal Stromal Tumor (GIST) of the stomach originates from which mesenchymal cell type?",
     options: ["Interstitial cells of Cajal (ICC)", "Smooth muscle myocytes", "Fibroblasts"],
     answer: 0,
@@ -1913,6 +2156,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-265",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which endemic liver fluke is the major oncogenic cause of cholangiocarcinoma in Southeast Asia and Thailand?",
     options: ["Clonorchis sinensis", "Schistosoma mansoni", "Opisthorchis viverrini"],
     answer: 2,
@@ -1921,6 +2165,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-266",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "2-week-old female neonate presents with non-bilious vomiting; palpation reveals an epigastric olive-shaped mass. Pathological lesion?",
     options: ["Tracheoesophageal fistula", "Glandular metaplasia in esophagus", "Circular muscular hypertrophy of pylorus", "Intestinal metaplasia in antrum"],
     answer: 2,
@@ -1929,6 +2174,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-267",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "20-year-old male with a 0.8 cm brownish-red painless nodule at lower lip enlarging during meals. Histological feature?",
     options: ["Squamous cell carcinoma", "Acantholysis", "Proliferating capillary channels and granulation tissue (Pyogenic granuloma)"],
     answer: 2,
@@ -1937,6 +2183,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-268",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Severe hematemesis following repeated forceful vomiting of gastric contents in an alcoholic. Diagnosis?",
     options: ["Mallory-Weiss tear (laceration at GE junction)", "Esophageal varices", "Peptic ulcer"],
     answer: 0,
@@ -1945,6 +2192,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-269",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Endoscopy demonstrates tongues of salmon-pink velvety mucosa extending above the gastroesophageal junction into white squamous mucosa. Primary neoplastic risk?",
     options: ["Gastric signet ring carcinoma", "Squamous cell carcinoma", "Esophageal adenocarcinoma"],
     answer: 2,
@@ -1953,6 +2201,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-271",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "45-year-old man with painless parotid mass. Biopsy reveals bilayered oncocytic epithelium surrounded by dense lymphoid stroma with germinal centers. Diagnosis?",
     options: ["Warthin tumor (Papillary cystadenoma lymphomatosum)", "Mucocele", "Pleomorphic adenoma"],
     answer: 0,
@@ -1961,6 +2210,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-272",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "1 year of nocturnal heartburn; endoscopy shows distal esophageal erythema. Biopsy: basal cell hyperplasia and intraepithelial eosinophils/neutrophils. Diagnosis?",
     options: ["Achalasia", "Esophageal candidiasis", "Reflux esophagitis", "Barrett esophagus"],
     answer: 2,
@@ -1969,6 +2219,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-274",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which cell type in the liver produces collagen during hepatic fibrogenesis and cirrhosis?",
     options: ["Sinusoidal endothelial cell", "Hepatic Stellate cell (Ito cell)", "Hepatocyte", "Kupffer cell"],
     answer: 1,
@@ -1977,6 +2228,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-275",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Obese female with type 2 DM; liver biopsy reveals widespread lipid droplets filling hepatocyte cytoplasm without lobular inflammation. Diagnosis?",
     options: ["Cholestasis", "Hepatic steatosis (Fatty liver)", "Steatohepatitis", "Cirrhosis"],
     answer: 1,
@@ -1985,6 +2237,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-276",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Patient with involuntary tremors, psychiatric symptoms, and Kayser-Fleischer rings. Diagnostic serum laboratory test?",
     options: ["Elevated ferritin", "Decreased serum ceruloplasmin", "Decreased transferrin"],
     answer: 1,
@@ -1993,6 +2246,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-277",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "25-year-old woman dies following suicidal overdose of acetaminophen. Microscopic liver finding?",
     options: ["Zone 3 (centrilobular) necrosis", "Periportal necrosis", "Microvesicular steatosis"],
     answer: 0,
@@ -2001,6 +2255,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-278",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "45-year-old female with 8 months of pruritus, elevated ALP, positive Antimitochondrial Antibodies (AMA), and granulomatous bile duct destruction. Diagnosis?",
     options: ["Primary sclerosing cholangitis", "Autoimmune hepatitis", "Primary biliary cholangitis (PBC)"],
     answer: 2,
@@ -2009,6 +2264,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-279",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Term infant develops mild jaundice on day 4 that clears following phototherapy. Underlying enzymatic mechanism?",
     options: ["Biliary atresia", "Immature hepatic UDP-glucuronyltransferase (UGT1A1) activity", "ABO incompatibility"],
     answer: 1,
@@ -2017,6 +2273,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-280",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "63-year-old male with massive lower GI bleeding and shock; EGD and colonoscopy fail to localize bleeding. Interventional procedure?",
     options: ["Upper GI follow-through", "Transcatheter mesenteric angiography and embolization"],
     answer: 1,
@@ -2025,6 +2282,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-282",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Meckel diverticulum represents the persistence of which embryonic structure?",
     options: ["Allantois", "Vitelline (omphalomesenteric) duct", "Foregut cyst", "Urachus"],
     answer: 1,
@@ -2033,6 +2291,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-283",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Hospitalized COPD patient receives broad-spectrum antibiotics for 2 weeks; develops high fever, leukocytosis, and profuse diarrhea. Causative organism?",
     options: ["Clostridioides difficile", "Shigella flexneri", "Salmonella enterica"],
     answer: 0,
@@ -2041,6 +2300,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-284",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "15-year-old female with RLQ pain and fever; appendectomy performed. Definitive histological diagnostic finding?",
     options: ["Submucosal lymphoid follicles", "Neutrophilic infiltration of the muscularis propria"],
     answer: 1,
@@ -2049,6 +2309,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-285",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Emergency medical treatment for bleeding esophageal varices involves which hemodynamic effect?",
     options: ["Splanchnic vasoconstriction (decreased splanchnic blood flow)", "Increased portal pressure"],
     answer: 0,
@@ -2057,6 +2318,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-286",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Somchai drinks 1 liter of 30% ABV local liquor per day. Daily alcohol intake in grams?",
     options: ["420 g", "300 g", "350 g", "240 g"],
     answer: 3,
@@ -2065,6 +2327,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-288",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "38-year-old smoker with nocturnal epigastric pain; endoscopy reveals a punched-out ulcer in the duodenal bulb with a clean necrotic base. Etiology?",
     options: ["Helicobacter pylori infection", "Zollinger-Ellison syndrome", "Crohn's disease"],
     answer: 0,
@@ -2073,6 +2336,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-289",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "17-year-old female with acute RLQ pain and vomiting in the emergency department. Initial mandatory screening test?",
     options: ["CT whole abdomen", "MRI", "Urine pregnancy test (UPT)", "Ultrasound"],
     answer: 2,
@@ -2081,6 +2345,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-290",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "68-year-old man with abdominal distension, obstipation, and high-pitched tinkling bowel sounds. Diagnostic imaging of choice?",
     options: ["Urinalysis", "Barium swallow", "Acute abdominal plain series (erect and supine)"],
     answer: 2,
@@ -2089,6 +2354,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-291",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Newborn with immediate regurgitation of milk feeds; barium swallow shows contrast terminating in a blind proximal esophageal pouch. Diagnosis?",
     options: ["Zenker diverticulum", "Duplicated esophagus", "Congenital esophageal atresia"],
     answer: 2,
@@ -2097,6 +2363,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-292",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Patient with 3 months of bloody mucoid diarrhea, anemia, and weight loss. Diagnostic procedure of choice?",
     options: ["Colonoscopy with biopsy", "Barium enema", "CT scan"],
     answer: 0,
@@ -2105,6 +2372,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-293",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Patient with classic heartburn and acid regurgitation without alarm symptoms, previously untreated. Best next step?",
     options: ["24-hr pH monitoring", "Empiric Proton Pump Inhibitor (PPI) trial for 8 weeks", "Esophageal manometry"],
     answer: 1,
@@ -2113,6 +2381,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-294",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "35-year-old with progressive difficulty swallowing solids and liquids, suspected achalasia or esophageal motility disorder. Diagnostic imaging?",
     options: ["Barium swallow (esophagogram)", "Abdominal ultrasound", "Barium enema"],
     answer: 0,
@@ -2121,6 +2390,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-295",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "30-year-old pregnant female with acute epigastric pain suspected of gallstones. Initial imaging modality?",
     options: ["Abdominal ultrasonography", "Plain abdominal film", "CT abdomen"],
     answer: 0,
@@ -2129,6 +2399,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-297",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "80-year-old woman with ruptured appendicitis and a 10 cm localized rim-enhancing retrocecal abscess. Management?",
     options: ["Percutaneous catheter drainage (PCD)", "Antibiotics alone", "Immediate open surgery"],
     answer: 0,
@@ -2137,6 +2408,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-298",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which therapeutic class is most effective for symptom relief and healing of erosive esophagitis in GERD?",
     options: ["H2 blockers", "Proton Pump Inhibitors (Omeprazole, Esomeprazole)", "Sucralfate"],
     answer: 1,
@@ -2145,6 +2417,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-299",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which drug is a synthetic prostaglandin E1 analogue that stimulates gastric mucus and bicarbonate secretion?",
     options: ["Omeprazole", "Sucralfate", "Misoprostol", "Cimetidine"],
     answer: 2,
@@ -2153,6 +2426,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-300",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which hepatic cytochrome P450 isoenzyme is primarily inhibited by Omeprazole, causing interaction with Clopidogrel and Diazepam?",
     options: ["CYP2C19", "CYP1A2", "CYP2D6", "CYP3A4"],
     answer: 0,
@@ -2161,6 +2435,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-301",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which prostone-derived laxative activates enterocyte ClC-2 chloride channels?",
     options: ["Lubiprostone", "Lactulose", "Bisacodyl"],
     answer: 0,
@@ -2169,6 +2444,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-302",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antiemetic and prokinetic agent can cause drug-induced parkinsonism and acute dystonia?",
     options: ["Aprepitant", "Granisetron", "Metoclopramide", "Lubiprostone"],
     answer: 2,
@@ -2177,6 +2453,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-303",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Patient ate raw seafood; develops watery diarrhea without blood that resolves spontaneously in several days. Organism?",
     options: ["Entamoeba histolytica", "Salmonella Typhi", "Vibrio parahaemolyticus", "EIEC"],
     answer: 2,
@@ -2185,6 +2462,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-304",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "55-year-old female with massive hematemesis, mild jaundice, ascites with fluid wave, and splenomegaly. Underlying liver pathology?",
     options: ["Massive hepatic necrosis", "Liver abscess", "Cirrhosis with portal hypertension"],
     answer: 2,
@@ -2193,6 +2471,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-305",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Pregnant woman in third trimester complains of acid regurgitation and heartburn. Primary contributing factors?",
     options: ["Overeating alone", "Increased intra-abdominal pressure & progesterone-induced lower esophageal sphincter (LES) relaxation"],
     answer: 1,
@@ -2201,6 +2480,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-306",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "What is the primary initial imaging modality of choice to evaluate the hepatobiliary system?",
     options: ["Computed Tomography", "Magnetic Resonance Imaging", "Ultrasonography"],
     answer: 2,
@@ -2209,6 +2489,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-307",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Which clinical finding in chronic liver disease is a direct result of impaired hepatic hormone clearance/metabolism?",
     options: ["Splenomegaly", "Gynecomastia", "Hemorrhoids", "Hematemesis"],
     answer: 1,
@@ -2217,6 +2498,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-308",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Most frequent etiology of acute ascending cholangitis?",
     options: ["Choledocholithiasis (common bile duct stone)", "Pancreatic cancer", "Biliary parasites"],
     answer: 0,
@@ -2225,6 +2507,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-309",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "What is the characteristic microscopic intestinal finding in acute cholera infection?",
     options: ["Diffuse villous necrosis", "Intact mucosal architecture with mild vascular congestion", "Ulcerated colonic mucosa"],
     answer: 1,
@@ -2233,6 +2516,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-310",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Patient with jaundice, dilated common bile duct, and obstructing gallstone. Expected urinalysis / lab finding?",
     options: ["Decreased/absent urobilinogen and elevated direct (conjugated) bilirubin", "Decreased direct bilirubin"],
     answer: 0,
@@ -2241,6 +2525,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-311",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which GI prokinetic agent possesses dual pharmacological mechanisms: dopamine D2 antagonism and acetylcholinesterase inhibition?",
     options: ["Itopride", "Domperidone", "Metoclopramide", "Cisapride"],
     answer: 0,
@@ -2249,6 +2534,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-312",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "63-year-old female with painless rectal bleeding and a dark brown anal mass that prolapses during defecation and requires manual reduction. Hemorrhoid grade?",
     options: ["Grade III internal hemorrhoid", "Grade I", "Grade IV", "Grade II"],
     answer: 0,
@@ -2257,6 +2543,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-313",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Progressive solid dysphagia and weight loss; physician suspects esophageal carcinoma. Initial fluoroscopic investigation?",
     options: ["Barium swallow (esophagogram)", "Barium enema", "Upper GI study"],
     answer: 0,
@@ -2265,6 +2552,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-315",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Cirrhotic patient with elevated AFP suspected of HCC. Most appropriate definitive non-invasive imaging?",
     options: ["Ultrasound", "ERCP", "Dynamic contrast-enhanced CT (Triphasic CT) / MRI"],
     answer: 2,
@@ -2273,6 +2561,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-316",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which acid-labile anti-secretory drug is formulated within an enteric-coated capsule/tablet?",
     options: ["Misoprostol", "Esomeprazole / Omeprazole", "Atropine", "Sucralfate"],
     answer: 1,
@@ -2281,6 +2570,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-317",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Most effective pharmacological agent for symptom resolution and mucosal healing in GERD?",
     options: ["H2 blockers", "Antacids", "Omeprazole (Proton Pump Inhibitor)"],
     answer: 2,
@@ -2289,6 +2579,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-318",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which constipation therapeutic directly activates enterocyte apical chloride channels?",
     options: ["Racecadotril", "Aprepitant", "Lubiprostone", "Lactulose"],
     answer: 2,
@@ -2297,6 +2588,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-319",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "60-year-old male with obstructive jaundice due to unresectable hilar cholangiocarcinoma. Interventional radiology palliative procedure?",
     options: ["TACE", "PEIT", "Percutaneous transhepatic biliary drainage (PTBD)", "RFA"],
     answer: 2,
@@ -2305,6 +2597,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-321",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Which systemic disorder features defective mesenteric lymphatic drainage, malabsorption, diarrhea, and PAS-positive foamy macrophages?",
     options: ["Whipple disease (Tropheryma whipplei)", "Celiac disease", "Abetalipoproteinemia"],
     answer: 0,
@@ -2313,6 +2606,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-322",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "What is the pathological definition of 'piecemeal necrosis' (interface hepatitis)?",
     options: ["Zone 3 necrosis", "Apoptosis/necrosis of periportal hepatocytes with lymphocytic infiltration extending beyond the limiting plate"],
     answer: 1,
@@ -2321,6 +2615,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-323",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "30-year-old female with 2 years of lower abdominal cramping relieved by defecation, normal weight, and negative stool RBC/WBC. Diagnosis?",
     options: ["Ischemic colitis", "Irritable bowel syndrome (IBS)", "Ulcerative colitis"],
     answer: 1,
@@ -2329,6 +2624,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-324",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "31-year-old returns from Central America with bloody diarrhea, then develops fever, RUQ pain, and a 10 cm hepatic cystic mass. Organism?",
     options: ["Entamoeba histolytica", "Giardia", "Clostridioides difficile", "Cryptosporidium"],
     answer: 0,
@@ -2337,6 +2633,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-325",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Intubated ICU patient on multiple antibiotics develops severe abdominal distension, ileus, and yellow-white mucosal plaques in colon. Diagnosis?",
     options: ["Ischemic bowel disease", "Pseudomembranous enterocolitis (C. difficile infection)", "Toxic megacolon"],
     answer: 1,
@@ -2345,6 +2642,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-327",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which antidiarrheal medication is a synthetic opioid congener that decreases bowel peristalsis?",
     options: ["Aluminum hydroxide", "Metronidazole", "Diphenoxylate"],
     answer: 2,
@@ -2353,6 +2651,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-329",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Interventional radiology modality of choice for a 10 cm solitary pyogenic liver abscess?",
     options: ["Percutaneous catheter drainage (PCD)", "TACE", "Radiofrequency ablation"],
     answer: 0,
@@ -2361,6 +2660,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-330",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "From the population dietary requirement curve, which reference parameter meets the energy/nutrient requirement for nearly all (97.5%) healthy individuals?",
     options: ["Recommended Dietary Allowance (RDA)", "Adequate Intake (AI)", "Tolerable Upper Intake Level (UL)", "Estimated Average Requirement (EAR)"],
     answer: 0,
@@ -2369,6 +2669,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-331",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which anatomical body component comprises a significantly higher percentage in healthy adult women compared to men?",
     options: ["Bone mineral", "Essential and non-essential (storage) adipose tissue", "Skeletal muscle mass"],
     answer: 1,
@@ -2377,6 +2678,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-332",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "In critically ill patients, acute renal failure induces severe negative nitrogen balance. Which metabolic factor best accounts for this loss of lean body mass?",
     options: ["Metabolic acidosis promoting accelerated ubiquitin-proteasome protein degradation", "Hypoparathyroidism"],
     answer: 0,
@@ -2385,6 +2687,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-333",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Why do fat-soluble vitamins (A, D, E, K) carry a substantially greater potential for clinical toxicity compared to water-soluble vitamins?",
     options: ["Rapid metabolic turnover", "Readily stored and accumulated in body adipose tissue and liver with slow clearance"],
     answer: 1,
@@ -2393,6 +2696,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-334",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Chronic alcoholic with recurrent acute-on-chronic pancreatitis presents with postprandial pain and 15 lb weight loss. Primary nutritional problem?",
     options: ["Fat malabsorption and secondary steatorrhea", "Hepatic encephalopathy", "Glucose intolerance alone"],
     answer: 0,
@@ -2401,6 +2705,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-335",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which dietary antioxidant carotenoid compound is associated with reduced oxidative stress and lower risk of breast/prostate neoplasms?",
     options: ["Sodium chloride", "Monounsaturated fatty acid alone", "Lycopene"],
     answer: 2,
@@ -2409,6 +2714,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-337",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "According to international cardiovascular nutritional guidelines, dietary intake of industrial trans-fatty acids should be limited to what percentage of total daily calories?",
     options: ["10%", "Less than 1% of total daily energy", "5%"],
     answer: 1,
@@ -2417,6 +2723,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-338",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which amino acids become conditionally essential during critical illness, catabolic stress, and trauma?",
     options: ["Alanine and Aspartate", "Arginine and Glutamine"],
     answer: 1,
@@ -2425,6 +2732,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-339",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Physical activity typically contributes what percentage to total daily energy expenditure (TDEE) in sedentary to moderately active individuals?",
     options: ["1 - 5%", "10 - 30%", "50 - 70%"],
     answer: 1,
@@ -2433,6 +2741,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-340",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is considered the clinical gold standard method for measuring resting energy expenditure (REE) in hospitalized patients?",
     options: ["Anthropometry", "Fixed empirical equations", "Indirect calorimetry"],
     answer: 2,
@@ -2441,6 +2750,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-341",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which of the following amino acids is purely ketogenic and cannot be converted into glucose through gluconeogenesis?",
     options: ["Alanine", "Glutamine", "Leucine and Lysine (Ketogenic amino acids)"],
     answer: 2,
@@ -2449,6 +2759,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-342",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Recommended daily dietary allowance for protein in healthy non-stressed adults?",
     options: ["0.8 g/kg/day", "1.5 g/kg/day", "2.0 g/kg/day"],
     answer: 0,
@@ -2457,6 +2768,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-343",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What percentage of total daily caloric intake should be provided by dietary fats in healthy adults?",
     options: ["5 - 10%", "20 - 35% (< 30%)", "50 - 60%"],
     answer: 1,
@@ -2465,6 +2777,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-344",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Recommended dietary upper limit for saturated fat intake in healthy adults?",
     options: ["30%", "20%", "Less than 7 - 10% of total calories"],
     answer: 2,
@@ -2473,6 +2786,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-345",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the baseline physiological water requirement per unit of energy expenditure in adults?",
     options: ["2.5 - 3.0 mL", "1.0 - 1.5 mL of water per kcal of energy expenditure"],
     answer: 1,
@@ -2481,6 +2795,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-346",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Follicular hyperkeratosis and skin xerosis are clinical manifestations of deficiency of which essential nutrients?",
     options: ["Vitamin A and essential fatty acids (omega-6/omega-3)", "Vitamin C only"],
     answer: 0,
@@ -2489,6 +2804,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-347",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which four variables are used to calculate Basal Energy Expenditure using the Harris-Benedict equation?",
     options: ["Sex, Weight, Height, and Age", "Activity factor and stress factor"],
     answer: 0,
@@ -2497,6 +2813,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-348",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Recommended upper daily intake limit for dietary salt (sodium chloride) for healthy adults?",
     options: ["15 grams", "10 grams", "Less than 5 grams per day (equivalent to < 2,000 mg Sodium)"],
     answer: 2,
@@ -2505,6 +2822,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-349",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Under the Global Leadership Initiative on Malnutrition (GLIM) consensus, what is required to diagnose malnutrition?",
     options: ["At least 1 phenotypic criterion (weight loss, low BMI, reduced muscle mass) AND at least 1 etiologic criterion (reduced food intake, disease inflammation)", "Weight loss alone"],
     answer: 0,
@@ -2513,6 +2831,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-350",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the simplest, most validated functional bedside assessment of muscle strength and physical nutrition status?",
     options: ["Handgrip dynamometry", "Dual X-ray absorptiometry", "Isotope dilution"],
     answer: 0,
@@ -2521,6 +2840,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-351",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Liver specimen shows large fibrous cyst with laminated chitinous wall and multiple daughter hydatid cysts containing scolices. Diagnosis & pathogen?",
     options: ["Amebic abscess", "Echinococcosis hydatid cyst caused by Echinococcus granulosus"],
     answer: 1,
@@ -2529,6 +2849,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-352",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Gross specimen of liver shows diffusely enlarged, greasy yellow liver with rounded borders. Name two primary etiologies.",
     options: ["Chronic alcohol abuse and Metabolic dysfunction (obesity/diabetes)", "Viral hepatitis"],
     answer: 0,
@@ -2537,6 +2858,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-353",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Liver cross-section shows firm, white-gray sclerotic mass obstructing the biliary tree with deep bile-stained green discoloration of the parenchyma. Diagnosis?",
     options: ["Cholangiocarcinoma with obstructive jaundice", "Hepatocellular carcinoma"],
     answer: 0,
@@ -2545,6 +2867,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-354",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Gastric mucosal biopsy showing superficial erosions, vascular congestion, and neutrophilic infiltration in lamina propria. Diagnosis?",
     options: ["Acute hemorrhagic / erosive gastritis", "Chronic atrophic gastritis"],
     answer: 0,
@@ -2553,6 +2876,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-355",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Gross stomach wall is diffusely thickened, rigid, and leathery with flattening of rugal folds (leather-bottle stomach). Gross term and histology?",
     options: ["Linitis plastica; Infiltrating signet ring cell adenocarcinoma", "Polypoid adenoma"],
     answer: 0,
@@ -2561,6 +2885,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-356",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Gross colonic specimen showing inflamed mucosal outpouching through the muscularis propria with peridiverticular fat stranding and suppuration. Diagnosis?",
     options: ["Colonic adenocarcinoma", "Ulcerative colitis", "Acute diverticulitis"],
     answer: 2,
@@ -2569,6 +2894,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-357",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Mid-esophageal ulcerating mass in a chronic smoker and alcohol drinker presenting with progressive dysphagia and hematemesis. Diagnosis?",
     options: ["Leiomyoma", "Adenocarcinoma", "Squamous cell carcinoma of esophagus"],
     answer: 2,
@@ -2577,6 +2903,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-358",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Polypoid colonic lesion on a stalk; microscopy shows crowded, branching tubular glands lined by hyperchromatic, stratified, elongated nuclei. Diagnosis?",
     options: ["Tubular adenoma of colon (Benign premalignant neoplasm)", "Hyperplastic polyp"],
     answer: 0,
@@ -2585,6 +2912,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-359",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Salivary mass showing biphasic components: ductal epithelial/myoepithelial cells embedded within a myxoid, chondroid stroma. Diagnosis?",
     options: ["Pleomorphic adenoma (Mixed tumor of salivary gland)", "Warthin tumor"],
     answer: 0,
@@ -2593,6 +2921,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-361",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Ulceroproliferative tumor centered at the ampulla of Vater. What clinical triad of symptoms does the patient develop?",
     options: ["Jaundice, Pruritus, and Steatorrhea", "Cough, fever, and hemoptysis"],
     answer: 0,
@@ -2601,6 +2930,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-362",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Submucosal spindle cell tumor of stomach with positive immunohistochemical staining for CD117 (KIT). Diagnosis & mutated gene?",
     options: ["Gastrointestinal Stromal Tumor (GIST); gain-of-function mutation in c-KIT (or PDGFRA)", "Leiomyosarcoma"],
     answer: 0,
@@ -2609,6 +2939,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-363",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which dietary electrolyte pattern is most strongly associated with the pathogenesis of essential hypertension?",
     options: ["High Calcium and Low Sodium", "High Sodium (Na+) and Low Potassium (K+)", "High Magnesium"],
     answer: 1,
@@ -2617,6 +2948,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-364",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What skeletal disease manifests in growing pediatric patients who suffer from severe chronic phosphorus deficiency?",
     options: ["Achondroplasia", "Rickets", "Scurvy", "Osteopetrosis"],
     answer: 1,
@@ -2625,6 +2957,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-365",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "During which life stage is absolute fractional intestinal calcium absorption and skeletal accretion highest?",
     options: ["Postmenopausal females", "Elderly males", "Adolescent boys and girls (pubertal growth spurt)"],
     answer: 2,
@@ -2633,6 +2966,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-366",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Severe maternal deficiency of which trace mineral during pregnancy causes congenital cretinism and irreversible intellectual disability in offspring?",
     options: ["Copper", "Iodine", "Zinc", "Iron"],
     answer: 1,
@@ -2641,6 +2975,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-367",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which dietary compound found in unrefined grains and legumes strongly binds non-heme iron and impairs its intestinal absorption?",
     options: ["Ascorbic acid", "Citric acid", "Phytic acid (Phytates)"],
     answer: 2,
@@ -2649,6 +2984,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-369",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which pairing correctly matches dietary cooking preparation with the resulting environmental carcinogen?",
     options: ["High-protein meat cooked at high temperatures -> Heterocyclic amines (HCAs)", "Popcorn and aflatoxin"],
     answer: 0,
@@ -2657,6 +2993,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-370",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which B-complex vitamin serves as the direct biochemical precursor for flavin mononucleotide (FMN) biosynthesis?",
     options: ["Cobalamin (B12)", "Thiamine (B1)", "Niacin (B3)", "Riboflavin (Vitamin B2)"],
     answer: 3,
@@ -2665,6 +3002,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-371",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which water-soluble vitamin forms the structural core of Coenzyme A (CoA)?",
     options: ["Pyridoxine (B6)", "Pantothenic acid (Vitamin B5)", "Niacin (B3)"],
     answer: 1,
@@ -2673,6 +3011,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-372",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Why can severe Vitamin B6 (pyridoxine) deficiency precipitate fasting hypoglycemia?",
     options: ["Inhibits glucagon secretion", "Pyridoxal phosphate (PLP) is an essential cofactor for glycogen phosphorylase"],
     answer: 1,
@@ -2681,6 +3020,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-373",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which enteral nutrition formulation is most appropriate for hypercatabolic stress, sepsis, and major trauma patients?",
     options: ["Reduced calorie dense formula", "High-protein, high-nitrogen concentration formula (immune-modulating)"],
     answer: 1,
@@ -2689,6 +3029,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-375",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "If an adult patient receives 5% Dextrose in Water (D5W) at a constant rate of 80 mL/hour for 24 hours, how many calories are provided?",
     options: ["326.4 kcal", "260.7 kcal", "384.0 kcal"],
     answer: 0,
@@ -2697,6 +3038,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-376",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the standard recommended dietary macronutrient caloric distribution (Carbohydrate : Protein : Fat)?",
     options: ["40 : 20 : 40", "55% Carbohydrate : 15% Protein : 30% Fat"],
     answer: 1,
@@ -2705,6 +3047,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-377",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the clinical standard physical measurement method for evaluating whole-body density and body composition?",
     options: ["Skinfold alone", "Densitometry (underwater hydrostatic weighing / air displacement plethysmography)"],
     answer: 1,
@@ -2713,6 +3056,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-378",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is an established clinical advantage of 'All-in-One' (total nutrient admixture) parenteral nutrition bags?",
     options: ["Increased infection risk", "Improved nutritional balance, reduced infusion administration complexity, and decreased nurse handling"],
     answer: 1,
@@ -2721,6 +3065,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-379",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What is the primary clinical indication for prescribing an oligomeric (semi-elemental / peptide-based) enteral formula?",
     options: ["Low cost routine feeding", "Clinically significant gastrointestinal malabsorption or pancreatic exocrine insufficiency"],
     answer: 1,
@@ -2729,6 +3074,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-380",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Prolonged consumption of large quantities of raw egg whites induces clinical deficiency of which B-complex vitamin?",
     options: ["Biotin (Vitamin B7)", "Thiamine", "Niacin", "Pyridoxine"],
     answer: 0,
@@ -2737,6 +3083,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-381",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which two dietary organic acids avidly chelate polyvalent cations (Ca2+, Mg2+, Fe2+) and limit their bioavailability?",
     options: ["Phytic acid and Oxalic acid", "Acetic acid and lactic acid"],
     answer: 0,
@@ -2745,6 +3092,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-382",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which food group represents the richest natural dietary source of magnesium?",
     options: ["Whole milk alone", "Dark green leafy vegetables (chlorophyll)", "Refined sugars"],
     answer: 1,
@@ -2753,6 +3101,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-383",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Gross liver specimen containing a thick-walled fibrous hydatid cyst with multiple translucent daughter cysts. Pathogen?",
     options: ["Fasciola hepatica", "Taenia solium", "Echinococcus granulosus (Echinococcosis hydatid cyst)"],
     answer: 2,
@@ -2761,6 +3110,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-384",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Cross section of liver showing mottled reticular pattern of dark red congested centrilobular zones interspersed with pale periportal areas ('nutmeg liver'). Diagnosis?",
     options: ["Centrilobular hemorrhagic necrosis (Chronic passive hepatic congestion)", "Cirrhosis"],
     answer: 0,
@@ -2769,6 +3119,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-385",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Pancreatic and peripancreatic adipose tissue showing opaque, chalky-white saponification deposits. Pathological process?",
     options: ["Coagulative necrosis", "Enzymatic fat necrosis in acute pancreatitis", "Caseous necrosis"],
     answer: 1,
@@ -2777,6 +3128,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-386",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Gallbladder specimen showing marked fibrotic wall thickening, mucosal blunting, and intramural Rokitansky-Aschoff sinuses. Diagnosis?",
     options: ["Acute gangrenous cholecystitis", "Chronic cholecystitis with cholelithiasis"],
     answer: 1,
@@ -2785,6 +3137,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-387",
     topic: "Pathology of Hepatobiliary & Pancreas",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Patient with an ulcerating malignant adenocarcinoma at the ampulla of Vater. What clinical triad of symptoms is anticipated?",
     options: ["Jaundice, Pruritus, and Steatorrhea", "Hemoptysis, hematuria, and oliguria"],
     answer: 0,
@@ -2793,6 +3146,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-388",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Gastric specimen displaying diffuse mucosal petechial hemorrhages and superficial erosions in a patient taking high-dose Aspirin. Diagnosis?",
     options: ["Acute hemorrhagic / erosive gastritis", "Gastric adenocarcinoma", "Peptic ulcer"],
     answer: 0,
@@ -2801,6 +3155,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-389",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Diffusely thickened, rigid, non-distensible stomach wall with obliteration of rugal folds (leather-bottle stomach). Gross descriptor and microscopic diagnosis?",
     options: ["Polypoid adenoma", "Linitis plastica; Infiltrative diffuse-type gastric adenocarcinoma"],
     answer: 1,
@@ -2809,6 +3164,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-390",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Fungating, ulcerated mass in the middle third of the esophagus in a 60-year-old heavy smoker. Histological type?",
     options: ["Keratinizing squamous cell carcinoma", "Small cell carcinoma", "Adenocarcinoma"],
     answer: 0,
@@ -2817,6 +3173,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-391",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Submucosal well-circumscribed gastric mesenchymal tumor staining positive for CD117 (c-Kit). Cell of origin?",
     options: ["Interstitial cells of Cajal (ICC)", "Vascular endothelial cells", "Schwann cells"],
     answer: 0,
@@ -2825,6 +3182,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-393",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient with chronic recurrent xerostomia and lower lip trauma presents with a soft, fluctuant, bluish painless swelling on the lower lip. Diagnosis?",
     options: ["Mucocele (Mucus extravasation phenomenon)", "Ranula", "Squamous cell carcinoma"],
     answer: 0,
@@ -2833,6 +3191,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-394",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "28-year-old female develops abrupt-onset severe nausea, projectile vomiting, and abdominal cramps 4 hours after eating somtum (papaya salad) at an afternoon party; resolves within 24 hours. Pathogenesis?",
     options: ["Bacterial invasion", "Ingestion of preformed heat-stable enterotoxin (Staphylococcus aureus)"],
     answer: 1,
@@ -2841,6 +3200,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-395",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "65-year-old alcoholic male presents with scleral icterus for 1 month; ultrasound reveals nodular liver surface and intrahepatic cholestasis. Pathophysiology of jaundice?",
     options: ["Increased uptake", "Decreased excretion of conjugated bilirubin into bile canaliculi and ductules"],
     answer: 1,
@@ -2849,6 +3209,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-396",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which acid-labile anti-ulcer medication is specifically manufactured within an enteric-coated delivery system to resist gastric acid degradation?",
     options: ["Sucralfate", "Proton Pump Inhibitors (e.g. Omeprazole, Esomeprazole)", "Antacids"],
     answer: 1,
@@ -2857,6 +3218,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-397",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Which pharmacological agent is indicated for managing acute watery diarrhea in young pediatric patients without suppressing bowel motility?",
     options: ["Loperamide", "Codeine", "Racecadotril", "Diphenoxylate"],
     answer: 2,
@@ -2865,6 +3227,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-399",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "A cancer patient is scheduled for emetogenic chemotherapy. Which selective 5-HT3 serotonin receptor antagonist is administered prior to the infusion?",
     options: ["Domperidone", "Metoclopramide", "Misoprostol", "Granisetron"],
     answer: 3,
@@ -2873,6 +3236,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-400",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "In an asymptomatic chronic carrier of Salmonella enterica serotype Typhi, which anatomical organ acts as the persistent bacterial reservoir?",
     options: ["Appendix", "Gallbladder", "Spleen", "Cecum"],
     answer: 1,
@@ -2881,6 +3245,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-401",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "58-year-old female with long-standing IBS-C presents with acute worsening of severe constipation after starting Calcium carbonate, Vitamin D, and Etoricoxib for osteoarthritis. Management?",
     options: ["Add high-dose stimulant laxatives", "Discontinue Calcium carbonate and Etoricoxib"],
     answer: 1,
@@ -2889,6 +3254,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-402",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Which diagnostic imaging modality is considered the gold standard for confirming acute diverticulitis and evaluating pericolic complications?",
     options: ["Ultrasound", "Barium enema", "Computed Tomography (CT whole abdomen with IV contrast)"],
     answer: 2,
@@ -2897,6 +3263,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-403",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Type 2 diabetic patient with BMI >30 has asymptomatic elevated transaminases. Liver biopsy reveals hepatocytes packed with lipid vacuoles without inflammation. Diagnosis?",
     options: ["Steatohepatitis", "Cirrhosis", "Hepatic steatosis (Fatty liver)", "Cholestasis"],
     answer: 2,
@@ -2905,6 +3272,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-404",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Patient with acute hepatitis tests positive for IgM anti-HAV, negative for HBsAg, IgM anti-HBc, and anti-HCV. What is the expected clinical outcome?",
     options: ["HCC", "Progression to chronic active hepatitis", "Complete clinical recovery without chronic carrier state"],
     answer: 2,
@@ -2913,6 +3281,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-405",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Epigastric pain for 3 months provoked by fatty meals; ultrasound shows common bile duct and intrahepatic duct dilation with an acoustic shadowing stone in distended gallbladder. Location of primary pathology?",
     options: ["Duodenum", "Gallbladder (Cholelithiasis)", "Pancreatic head"],
     answer: 1,
@@ -2921,6 +3290,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-406",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Young female presents with fatigue and jaundice. Serological workup reveals positive ANA, positive anti-smooth muscle antibody (ASMA), and negative AMA. Diagnosis?",
     options: ["Primary sclerosing cholangitis", "Primary biliary cirrhosis", "Autoimmune hepatitis (Type 1)"],
     answer: 2,
@@ -2929,6 +3299,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-407",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Autopsy of a 25-year-old woman who ingested an intentional massive overdose of acetaminophen. Which microscopic zonal injury is present?",
     options: ["Zone 1 periportal necrosis", "Midzonal necrosis", "Zone 3 (centrilobular) coagulative necrosis"],
     answer: 2,
@@ -2937,6 +3308,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-408",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Which hematologic disorder is a classic recognized cause of severe neonatal hyperbilirubinemia leading to Kernicterus?",
     options: ["Iron deficiency anemia", "Ineffective erythropoietic syndrome / Hemolytic disease"],
     answer: 1,
@@ -2945,6 +3317,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-409",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Physical examination reveals golden-brown copper deposits in Descemet's membrane of the cornea (Kayser-Fleischer rings). Expected serum finding?",
     options: ["Decreased urinary copper", "Decreased serum ceruloplasmin", "Decreased liver copper"],
     answer: 1,
@@ -2953,6 +3326,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-410",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "20-year-old female presents with yellow eyes and dark brown urine after taking oxidant medication; laboratory analysis confirms low G6PD activity. Mechanism?",
     options: ["Extravascular hemolysis", "Hepatocellular cholestasis", "Intravascular hemolysis"],
     answer: 2,
@@ -2961,6 +3335,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-412",
     topic: "Drugs used in GI",
+    blueprintGroup: "Drugs used in GI/Hepatobiliary system",
     stem: "Cirrhotic woman with bleeding esophageal varices; what pharmacodynamic mechanism is required of emergency intravenous drug therapy prior to endoscopy?",
     options: ["Increased venous return", "Decreased splanchnic blood flow (splanchnic vasoconstriction)"],
     answer: 1,
@@ -2969,6 +3344,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-414",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Liver biopsy from an alcoholic patient demonstrates diffuse intracytoplasmic lipid accumulation within hepatocytes without inflammatory infiltration. Diagnosis?",
     options: ["Hepatic steatosis (Fatty liver)", "Steatohepatitis", "Micronodular cirrhosis"],
     answer: 0,
@@ -2977,6 +3353,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-415",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Endoscopic examination of the duodenal bulb demonstrates a sharply punched-out mucosal defect with a smooth, clean base without elevated irregular borders. Diagnosis?",
     options: ["Malignant ulcerative adenocarcinoma", "Peptic ulcer disease (Duodenal ulcer)"],
     answer: 1,
@@ -2985,6 +3362,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-416",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Severe burn / trauma patient in ICU develops acute upper GI bleeding; gastroscopy shows multiple superficial petechial erosions in stomach and duodenum. Type of ulcer?",
     options: ["Peptic ulcer", "Curling ulcer (acute stress erosion)", "Cushing ulcer"],
     answer: 1,
@@ -2993,6 +3371,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-417",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "28-year-old woman with 2 months of epigastric pain, weight loss, and cervical lymphadenopathy; endoscopy reveals thickened, rigid gastric wall devoid of rugal folds. Diagnosis?",
     options: ["Diffuse infiltrative gastric adenocarcinoma (Linitis plastica)", "Intestinal-type carcinoma"],
     answer: 0,
@@ -3001,6 +3380,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-418",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "0.8 cm brownish-red fluctuant nodule on lower lip that enlarges during mastication; histology shows pseudocyst filled with mucin and granulation tissue. Diagnosis?",
     options: ["Squamous cell carcinoma", "Pyogenic granuloma", "Mucocele (Salivary duct obstruction/rupture)"],
     answer: 2,
@@ -3009,6 +3389,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-419",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Red vascular mucosal nodule in the oral cavity shows lobular capillary proliferation, endothelial swelling, and surface inflammatory exudate. Diagnosis?",
     options: ["Candidiasis", "Pyogenic granuloma (Lobular capillary hemangioma)", "Leukoplakia"],
     answer: 1,
@@ -3017,6 +3398,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-420",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient with chronic autoimmune metaplastic atrophic gastritis, antiparietal antibodies, and macrocytic anemia. Long-term neoplastic complication risk?",
     options: ["Increased risk of gastric adenocarcinoma and neuroendocrine carcinoid tumors", "Squamous cell carcinoma"],
     answer: 0,
@@ -3025,6 +3407,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-421",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Adult who avoids dairy products develops explosive watery diarrhea and abdominal distension within an hour of ingesting milk. Etiology?",
     options: ["Bacterial enteritis", "Primary lactase deficiency (Osmotic diarrhea)", "Celiac sprue"],
     answer: 1,
@@ -3033,6 +3416,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-422",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Painless mass in parotid gland displaying ductal epithelial cells, myoepithelial cells, and chondromyxoid mesenchymal-like stroma. Diagnosis?",
     options: ["Pleomorphic adenoma (Mixed tumor of salivary gland)", "Warthin tumor", "Mucocele"],
     answer: 0,
@@ -3041,6 +3425,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-423",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Neonate with maternal polyhydramnios develops coughing and cyanosis on first feeding; catheter cannot pass into stomach. What is the most common anatomic subtype?",
     options: ["Esophageal atresia with distal tracheoesophageal fistula (Type C, ~85%)", "Isolated esophageal atresia"],
     answer: 0,
@@ -3049,6 +3434,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-424",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "50-year-old male with long-standing GERD; endoscopy shows salmon-pink velvety mucosa extending above GE junction. Greatest neoplastic risk?",
     options: ["Esophageal adenocarcinoma", "Squamous cell carcinoma", "Gastric ulcer", "Achalasia"],
     answer: 0,
@@ -3057,6 +3443,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-425",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "Patient taking regular aspirin develops epigastric pain and bleeding mucosal petechiae. Pathologic mechanism?",
     options: ["Intestinal metaplasia", "Mucosal epithelial erosion secondary to prostaglandin synthesis inhibition"],
     answer: 1,
@@ -3065,6 +3452,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-427",
     topic: "Pathology of GI 1",
+    blueprintGroup: "Path of GI 1",
     stem: "34-year-old male with heavy alcohol bingeing presents with acute hematemesis following repeated non-bloody retching. Diagnosis?",
     options: ["Esophageal varices", "Barrett esophagus", "Mallory-Weiss tear / laceration"],
     answer: 2,
@@ -3073,6 +3461,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-428",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Patient with chronic dyspepsia unresponsive to meals; clinician suspects an intrinsic gastric lesion. Fluoroscopic study of choice?",
     options: ["Barium enema", "Upper GI study (double-contrast)", "Abdominal ultrasound", "Barium swallow"],
     answer: 1,
@@ -3081,6 +3470,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-430",
     topic: "Clinical GI Tract",
+    blueprintGroup: "Clinical application in GI tract",
     stem: "Endoscopy and barium study show a smooth, concentric thin mucosal ring at the gastroesophageal junction causing episodic solid-food dysphagia. Diagnosis?",
     options: ["Lower esophageal mucosal ring (Schatzki ring)", "Esophageal web", "Zenker diverticulum"],
     answer: 0,
@@ -3089,6 +3479,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-431",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Patient presents with persistent melena; upper endoscopy (EGD) and full colonoscopy reveal no bleeding source. Recommended next intervention?",
     options: ["Oral PPI", "Catheter mesenteric angiography (SMA / Celiac)", "Repeat barium study"],
     answer: 1,
@@ -3097,6 +3488,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-432",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "According to physical Roentgen density principles, which tissue absorbs the most X-ray photons and appears most hyperdense on plain radiograms?",
     options: ["Lung", "Trachea", "Spine / Bone", "Muscle", "Liver"],
     answer: 2,
@@ -3105,6 +3497,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-434",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Patient with abdominal distension, crampy pain, and obstipation. Initial radiologic examination of choice?",
     options: ["Ultrasound", "Acute abdominal plain radiography series (erect and supine)", "CT"],
     answer: 1,
@@ -3113,6 +3506,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-435",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Suspicion of acute cholelithiasis in a patient with postprandial RUQ pain. Imaging modality of choice?",
     options: ["Non-contrast CT", "Plain radiograph", "Transabdominal ultrasonography"],
     answer: 2,
@@ -3121,6 +3515,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-437",
     topic: "Pathology of GI 2",
+    blueprintGroup: "Path of GI 2",
     stem: "Segmental intestinal inflammation with deep fissuring ulcers, transmural lymphoid aggregates, and non-caseating granulomas. Diagnosis?",
     options: ["Ulcerative colitis", "Ischemic bowel disease", "Crohn's disease"],
     answer: 2,
@@ -3129,6 +3524,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-438",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Patient with jaundice, anorexia, and weight loss; ultrasound reveals dilated intrahepatic ducts and an obstructing mass at porta hepatis. Pathophysiology?",
     options: ["Increased uptake", "Decreased excretion of conjugated bilirubin into common bile duct"],
     answer: 1,
@@ -3137,6 +3533,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-439",
     topic: "Clinical Hepatobiliary & Pancreas",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "In acute pancreatitis with elevated serum lipase, which biochemical derangement serves as an indicator of severe disease and poor prognosis?",
     options: ["Hyperkalemia", "Serum hypocalcemia (Calcium <8 mg/dL)", "Elevated albumin"],
     answer: 1,
@@ -3145,6 +3542,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-440",
     topic: "GI Imaging",
+    blueprintGroup: "Introduction to GI imaging",
     stem: "Clinician suspects hepatocellular carcinoma in a cirrhotic patient with elevated AFP. Most appropriate diagnostic study?",
     options: ["Ultrasound alone", "Plain film", "Triphasic contrast-enhanced CT abdomen / Dynamic MRI"],
     answer: 2,
@@ -3153,6 +3551,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-441",
     topic: "Pathology of Hepatobiliary",
+    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
     stem: "Neonate with jaundice in the first week of life that resolves following phototherapy. What is the underlying enzymatic cause?",
     options: ["Transient deficiency / low activity of hepatic UDP-glucuronyltransferase (UGT1A1)", "Canalicular transporter defect"],
     answer: 0,
@@ -3161,6 +3560,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-442",
     topic: "Clinical Hepatobiliary",
+    blueprintGroup: "Clinical application in hepatobiliary system and pancreas",
     stem: "Which clinical finding is a direct hemodynamic sequela of elevated portal venous pressure in cirrhosis?",
     options: ["Palmar erythema", "Jaundice", "Splenomegaly", "Spider nevi"],
     answer: 2,
@@ -3169,6 +3569,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-443",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Patient with inoperable hilar cholangiocarcinoma presenting with severe biliary obstruction and pruritus. Proper interventional procedure?",
     options: ["TACE", "RFA", "Percutaneous transhepatic biliary drainage (PTBD)"],
     answer: 2,
@@ -3177,6 +3578,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-444",
     topic: "GI Therapeutic Modalities",
+    blueprintGroup: "Other GI therapeutic modalities",
     stem: "Cirrhotic patient with multi-nodular bilobar hepatocellular carcinoma not amenable to surgical resection. Interventional treatment of choice?",
     options: ["Thermal ablation", "Transarterial chemoembolization (TACE)", "Percutaneous drainage"],
     answer: 1,
@@ -3185,6 +3587,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-445",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which component of dietary fiber is fermented by colonic bacteria to produce short-chain fatty acids that protect against colon carcinoma?",
     options: ["Polypeptides", "Non-starch polysaccharides / Heteropolysaccharides", "Polynucleotides"],
     answer: 1,
@@ -3193,6 +3596,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-447",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which long-chain saturated fatty acid is most potently atherogenic by raising serum LDL cholesterol and clogging coronary arteries?",
     options: ["Palmitic acid (C16:0)", "Stearic acid", "Linoleic acid", "Oleic acid"],
     answer: 0,
@@ -3201,6 +3605,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-448",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Where is the largest reservoir of total body magnesium located in humans?",
     options: ["Skeleton (bone mineral lattice) and skeletal muscle", "Extracellular plasma"],
     answer: 0,
@@ -3209,6 +3614,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-449",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Patient has serum sodium of 123 mmol/L, normal total body sodium, no edema, and normal skin turgor. Classification of hyponatremia?",
     options: ["Euvolemic hyponatremia (e.g. SIADH)", "Hypervolemic hyponatremia", "Hypovolemic hyponatremia"],
     answer: 0,
@@ -3217,6 +3623,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-450",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Worker exposed to radioiodine fallout at a nuclear disposal site. Which prophylactic agent blocks thyroidal uptake of radioactive iodine?",
     options: ["Potassium iodide (KI)", "Magnesium citrate", "Zinc chelate"],
     answer: 0,
@@ -3225,6 +3632,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-451",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Peptic ulcer patient taking large doses of aluminium hydroxide antacid develops muscle weakness and hypophosphatemia. Mechanism?",
     options: ["Aluminium binds phosphate in the intestinal lumen, forming insoluble precipitates", "Increases renal phosphate wasting"],
     answer: 0,
@@ -3233,6 +3641,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-452",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "A pediatric patient with congenital biliary tract obstruction is prone to develop clinical deficiencies of which group of vitamins?",
     options: ["Fat-soluble vitamins (A, D, E, K)", "Water-soluble B-complex vitamins"],
     answer: 0,
@@ -3241,6 +3650,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-453",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Clinical image showing swollen, purplish, bleeding spongy gums and corkscrew hairs in a malnourished patient. Diagnosis?",
     options: ["Pellagra", "Beriberi", "Scurvy (Vitamin C deficiency)", "Rickets"],
     answer: 2,
@@ -3249,6 +3659,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-454",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Severe chronic Vitamin E (alpha-tocopherol) deficiency produces which characteristic neurological syndrome?",
     options: ["Spinocerebellar ataxia and loss of proprioception/vibratory sensation", "Night blindness"],
     answer: 0,
@@ -3257,6 +3668,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-455",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Surgical resection of the terminal ileum inevitably results in malabsorption and clinical deficiency of which micronutrient?",
     options: ["Folate", "Vitamin B12 (Cobalamin) and bile acids", "Thiamine", "Vitamin C"],
     answer: 1,
@@ -3265,6 +3677,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-456",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Advanced deficiency of Vitamin A leads to softening, ulceration, and melting of the cornea, termed?",
     options: ["Craniotabes", "Keratomalacia (Xerophthalmia)", "Osteomalacia"],
     answer: 1,
@@ -3273,6 +3686,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-457",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which group of dietary vitamins functions primarily as non-enzymatic cellular antioxidants?",
     options: ["Vitamins C and E (along with carotenoids)", "Vitamins B1 and B2"],
     answer: 0,
@@ -3281,6 +3695,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-458",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Carbohydrate metabolism, central nervous system ATP generation, and peripheral nerve myelin maintenance depend on which vitamin?",
     options: ["Niacin", "Riboflavin", "Pyridoxine", "Thiamine (Vitamin B1)"],
     answer: 3,
@@ -3289,6 +3704,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-459",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Strict lifelong vegans who consume no animal products, eggs, or dairy are at high risk of developing deficiency of which vitamin?",
     options: ["Vitamin C", "Vitamin B1", "Vitamin B12 (Cobalamin)"],
     answer: 2,
@@ -3297,6 +3713,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-460",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Young child fed a low-protein (5%) but high-carbohydrate diet receiving adequate total calories presents with pitting edema and a 'flaky paint' rash. Diagnosis?",
     options: ["Marasmus", "Scurvy", "Kwashiorkor", "Beriberi"],
     answer: 2,
@@ -3305,6 +3722,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-461",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Excessive maternal ingestion of high doses of which vitamin during the first trimester of pregnancy is potently teratogenic?",
     options: ["Vitamin B12", "Vitamin E", "Vitamin C", "Vitamin A (Retinoids)"],
     answer: 3,
@@ -3313,6 +3731,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-462",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Toddler consumes large quantities of commercial apple juice; develops chronic non-bloody diarrhea. Mechanism?",
     options: ["Secretory toxin diarrhea", "Osmotic diarrhea from unabsorbed fructose and sorbitol"],
     answer: 1,
@@ -3321,6 +3740,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-463",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which pairing between marine food source and associated biological toxin is INCORRECT?",
     options: ["Scallop, puffer fish -> Saxitoxin (Incorrect: Puffer fish contains tetrodotoxin!)", "Puffer fish -> Tetrodotoxin"],
     answer: 0,
@@ -3329,6 +3749,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-464",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which specialized enteral nutrition formula is designed for patients with advanced decompensated hepatic encephalopathy?",
     options: ["High aromatic amino acids", "High Branched-Chain Amino Acids (BCAA: leucine, isoleucine, valine) and Low Aromatic Amino Acids (AAA)"],
     answer: 1,
@@ -3337,6 +3758,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-465",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which metabolic component constitutes the largest fraction (60-70%) of total daily energy expenditure in a healthy sedentary adult?",
     options: ["Physical activity", "Thermic effect of food", "Basal Metabolic Rate (BMR / BEE)"],
     answer: 2,
@@ -3345,6 +3767,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-466",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ปัจจัยในข้อใดที่เกี่ยวข้องกับ Nutrient Utilization (การนำสารอาหารไปใช้ในระดับเซลล์)?",
     options: ["Nutrient availability", "ถูกทุกข้อ", "Hormonal environment", "Inflammatory state"],
     answer: 1,
@@ -3353,6 +3776,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-467",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Protein requirement สำหรับบุคคลทั่วไปสุขภาพดี มีค่าเท่าใด?",
     options: ["0.6 - 0.8 g/kg/day", "1.5 - 2.0 g/kg/day", "0.8 - 1.0 g/kg/day", "1.2 - 1.5 g/kg/day"],
     answer: 2,
@@ -3361,6 +3785,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-468",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Respiratory Quotient (RQ) ในข้อใดถูกต้อง?",
     options: ["Glucose oxidation: RQ = 1.0", "Fat oxidation: RQ = 0.7", "Lipogenesis: RQ = 1.2", "ถูกทุกข้อ", "Protein oxidation: RQ = 0.8"],
     answer: 3,
@@ -3369,6 +3794,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-469",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ข้อใด มิใช่ การประเมินภาวะโภชนาการโดยวิธี Anthropometric (การวัดสัดส่วนร่างกาย)?",
     options: ["วัดน้ำหนัก ส่วนสูง ประเมินรูปร่าง", "การตรวจทางชีวเคมีและตรวจวัดปริมาณไขมันในเลือด", "ติดตามน้ำหนัก"],
     answer: 1,
@@ -3377,6 +3803,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-470",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ชายไทยอายุ 62 ปี เข้ารับการรักษาด้วย grade 3 hepatic encephalopathy สูตรอาหารทางสายยางที่เหมาะสมที่สุดคือ?",
     options: ["High aromatic amino acids", "Caloric dense, high branched-chain amino acids (BCAA), low aromatic amino acids (AAA)"],
     answer: 1,
@@ -3385,6 +3812,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-471",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "คำนวณ BEE ชายอายุ 70 ปี น้ำหนัก 62 kg ส่วนสูง 175 cm โดยใช้ Harris-Benedict equation (BEE = 66.47 + 13.75W + 5.0H - 6.76A)?",
     options: ["1450 kcal/day", "1250 kcal/day", "1320 kcal/day", "1550 kcal/day"],
     answer: 2,
@@ -3393,6 +3821,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-472",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "นาย ก รับประทานอาหารจานด่วน: เนื้อหมูปานกลาง 4 ช้อนโต๊ะ, น้ำมัน 1 ช้อนชา, ผักโหระพา 1 ถ้วย, ข้าว 3 servings, นมสด whole milk 1 แก้ว. ได้รับพลังงานจากไขมันร้อยละเท่าใด?",
     options: ["ร้อยละ 30", "ร้อยละ 20", "ร้อยละ 50", "ร้อยละ 40"],
     answer: 3,
@@ -3401,6 +3830,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-473",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "จากอาหารของ นาย ก ในข้อ 13 ได้รับโปรตีนปริมาณทั้งหมดกี่กรัม?",
     options: ["40 กรัม", "30 กรัม", "50 กรัม", "60 กรัม"],
     answer: 1,
@@ -3409,6 +3839,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-474",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ผู้ป่วย renal failure ยังไม่ได้รับการฟอกไต ควรเลือก enteral nutrition สูตรใดจากตาราง?",
     options: ["สูตร a", "สูตร d (Protein 34.4 g/L, Calories 2000 kcal/L, low K 28 mEq/L, low Phosphate 690 mg/L)", "สูตร c"],
     answer: 1,
@@ -3417,6 +3848,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-475",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "จากตาราง enteral nutrition สูตรอาหารใดเหมาะสมที่สุดกับผู้ป่วย severe hypercatabolic stress ที่ต้องการโปรตีนสูง?",
     options: ["สูตร c (Protein 83 g/L, Calories 1500 kcal/L)", "สูตร a", "สูตร b", "สูตร d"],
     answer: 0,
@@ -3425,6 +3857,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-476",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ข้อใดถูกต้องเกี่ยวกับ Monomeric (Elemental) Enteral Formula?",
     options: ["มีปัญหาเรื่องรสและกลิ่นของโปรตีน และ ไม่จำเป็นต้องผ่านการย่อย", "Osmolarity ต่ำกว่า polymeric formula"],
     answer: 0,
@@ -3433,6 +3866,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-477",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ผู้ป่วย stroke ได้รับสูตรอาหาร Nutra (1060 kcal/L) ครั้งละ 300 mL วันละ 4 ครั้ง จะได้รับพลังงานทั้งหมดเท่าไรต่อวัน?",
     options: ["1800 kcal", "800 kcal", "1272 kcal (~1300 kcal)", "1000 kcal"],
     answer: 2,
@@ -3441,6 +3875,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-478",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "จากกราฟการแจกแจงความต้องการสารอาหารในประชากร พารามิเตอร์ใดที่ครอบคลุมความต้องการของคนสุขภาพดีถึง 97.5%?",
     options: ["Recommended Dietary Allowance (RDA)", "Estimated Average Requirement (EAR)", "Adequate Intake (AI)"],
     answer: 0,
@@ -3449,6 +3884,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-479",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "What temperature range constitutes the biological 'Danger Zone' for foodborne microbial proliferation?",
     options: ["0 - 4 C", "5 - 60 degrees Celsius (40 - 140 F)", "70 - 100 C"],
     answer: 1,
@@ -3457,6 +3893,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-480",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Which dietary bioactive antioxidant compound is linked with cellular protection against oxidative damage and breast/prostate cancers?",
     options: ["Monounsaturated fatty acids", "High salt diet", "Lycopene"],
     answer: 2,
@@ -3465,6 +3902,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-481",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ส่วนประกอบในร่างกายข้อใดของผู้ชายที่มีสัดส่วนน้อยกว่าผู้หญิงอย่างมีนัยสำคัญ?",
     options: ["Bone mineral", "Essential fat and Non-essential (storage) fat", "Total body water", "Skeletal muscle mass"],
     answer: 1,
@@ -3473,6 +3911,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-482",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ปริมาณน้ำที่ร่างกายผู้ใหญ่ปกติควรได้รับต่อวัน คิดเป็นสัดส่วนเท่าใดต่อพลังงานที่ใช้ไป?",
     options: ["2.0 - 2.5 mL", "1.0 - 1.5 mL of water per kcal of energy expenditure", "0.5 mL"],
     answer: 1,
@@ -3481,6 +3920,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-483",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "ข้อใดจับคู่ระหว่าง อาหาร และ สารชีวพิษ (Food Toxin) ไม่ถูกต้อง?",
     options: ["Scallop, puffer fish -> Saxitoxin (ไม่ถูกต้อง: Puffer fish มีพิษ Tetrodotoxin)", "Raw egg -> Avidin", "Puffer fish -> Tetrodotoxin"],
     answer: 0,
@@ -3489,6 +3929,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-484",
     topic: "Nutrition & Metabolism",
+    blueprintGroup: "Not in blueprint (outside GI II scope)",
     stem: "Fermented vegetable protein ที่ผ่านการผลิตด้วยกระบวนการย่อยสลายด้วยกรด (Acid-hydrolyzed vegetable protein) มักตรวจพบสารพิษก่อมะเร็งชนิดใด?",
     options: ["Aflatoxin", "3-MCPD (3-monochloropropane-1,2-diol)", "Saxitoxin"],
     answer: 1,
