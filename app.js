@@ -37,6 +37,13 @@
     filterList: $("filterList"),
     filterAll: $("filterAll"),
     filterNone: $("filterNone"),
+    statCorrect: $("statCorrect"),
+    statWrong: $("statWrong"),
+    statUnseen: $("statUnseen"),
+    statCorrectN: $("statCorrectN"),
+    statWrongN: $("statWrongN"),
+    statUnseenN: $("statUnseenN"),
+    statsBar: $("statsBar"),
   };
 
   let questions = allQuestions;
@@ -122,6 +129,31 @@
       void el.offsetWidth;
       el.classList.add("bump");
     }
+  }
+
+  // ---------- stats bar (correct / wrong / unseen, within the current filter) ----------
+  function renderStats() {
+    const totalQ = questions.length;
+    let correct = 0, wrong = 0;
+    questions.forEach((q) => {
+      const status = history[q.id];
+      if (status === "correct") correct++;
+      else if (status === "wrong") wrong++;
+    });
+    const unseen = totalQ - correct - wrong;
+
+    const pct = (n) => (totalQ ? (n / totalQ) * 100 : 0);
+    els.statCorrect.style.width = pct(correct) + "%";
+    els.statWrong.style.width = pct(wrong) + "%";
+    els.statUnseen.style.width = pct(unseen) + "%";
+
+    els.statCorrectN.textContent = correct.toLocaleString("en-US");
+    els.statWrongN.textContent = wrong.toLocaleString("en-US");
+    els.statUnseenN.textContent = unseen.toLocaleString("en-US");
+    els.statsBar.setAttribute(
+      "aria-label",
+      `${correct} correct, ${wrong} wrong, ${unseen} unseen out of ${totalQ}`
+    );
   }
 
   // ---------- filter panel ----------
@@ -211,6 +243,7 @@
   }
 
   function render() {
+    renderStats();
     if (!questions.length) {
       els.progress.textContent = "No questions match this filter";
       els.eyebrow.textContent = "Case study · Question";
@@ -275,6 +308,7 @@
 
     history[q.id] = correct ? "correct" : "wrong";
     saveHistory();
+    renderStats();
 
     if (correct) {
       sessionCorrect++;

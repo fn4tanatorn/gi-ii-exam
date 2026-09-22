@@ -134,6 +134,46 @@ body {
 
 .filter-item.out-of-scope .label { color: var(--muted); font-style: italic; }
 
+/* ---------- stats bar (correct / wrong / unseen) ---------- */
+.stats-bar {
+  display: flex;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--line);
+  margin-bottom: 8px;
+}
+
+.stats-seg { height: 100%; width: 0%; transition: width 0.3s ease; }
+.stats-seg.correct { background: var(--correct); }
+.stats-seg.wrong { background: var(--wrong); }
+.stats-seg.unseen { background: transparent; }
+
+.stats-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.legend-item b { font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+.legend-item i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-item.correct i { background: var(--correct); }
+.legend-item.wrong i { background: var(--wrong); }
+.legend-item.unseen i { background: var(--line); border: 1px solid var(--muted); }
+
 .score { text-align: right; }
 
 .score-label {
