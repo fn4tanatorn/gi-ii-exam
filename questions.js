@@ -27,6 +27,21 @@
 //    remain tagged Path of GI 1 despite not appearing in Lec1 either — their true home
 //    cannot be confirmed without Lec2/Lec3 slide content, so left flagged rather than
 //    guessed.
+//
+// Checked against the real Lec4 slide deck (GI II 04.pdf, 41 pages), 2026-09-22:
+//  - Lec4 ("Clinical application in GI tract") is NOT a broad clinical-management
+//    lecture — its entire content is one case-based session on chronic abdominal pain
+//    worked up as Irritable Bowel Syndrome (LODCRAFT history approach, red-flag signs,
+//    Rome IV criteria, IBS management).
+//  - Of the 37 questions tagged "Clinical application in GI tract", only ~10 actually
+//    match this content (IBS / chronic lower-abdominal pain relieved by defecation):
+//    MCQ-GI2-013, 014, 023, 038, 039, 143, 144, 257, 323, 401.
+//  - The other ~27 (GERD management, hematemesis/variceal bleeding workup, achalasia,
+//    neonatal TEF, appendicitis ED management, diverticular bleeding, Salmonella
+//    carrier state, etc.) do not appear anywhere in Lec4. Left tagged as-is per user
+//    decision — their true lecture can't be confirmed without further source slides,
+//    so this bucket currently mixes verified Lec4 content with unverified "generally
+//    clinical" GI questions rather than being a clean 1:1 match to that blueprint row.
 window.QUESTIONS = [
   {
     id: "MCQ-GI2-001",
