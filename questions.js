@@ -10,15 +10,23 @@
 //                 GI disorder; Lab1/Lab2; Active Learning; 3 of the 4 named E-learning
 //                 topics) are NOT separately identifiable from the source spreadsheet,
 //                 so their questions stay folded into the closest broader group rather
-//                 than being guessed — EXCEPT the 3 below, confirmed against the real
-//                 Lec1 slide deck (GI II 01.pdf) as congenital-abnormality content
-//                 wrongly bucketed under "Pathology of GI 1" by the source spreadsheet.
+//                 than being guessed.
 //
-// Also verified against Lec1 (2026-09-22): 5 further "Pathology of GI 1" questions
-// (esophageal varices MCQ-GI2-037; esophageal SCC MCQ-GI2-357/390; oral pyogenic
-// granuloma MCQ-GI2-267/419) describe diagnoses NOT covered anywhere in that lecture.
-// Left tagged as Path of GI 1 (unchanged) pending Lec2/Lec3 slides to confirm their
-// true home — flagging here rather than guessing.
+// Verified against the real Lec1 slide deck (GI II 01.pdf, 127 pages), 2026-09-22:
+//  - 3 questions (pyloric stenosis x2, omphalocele) retagged to a new "Congenital
+//    Abnormalities of GI Tract" group — matches that named E-learning topic exactly,
+//    not Lec1.
+//  - 16 more questions retagged INTO "Path of GI 1" from "Path of GI 2" (appendicitis,
+//    diverticular disease, Meckel diverticulum, colonic adenoma — all explicitly in
+//    Lec1's own content) and from "Pathology of hepatobiliary" (pancreatitis,
+//    cholecystitis — Lec1's own deck ends with gallbladder/pancreas pathology, it is
+//    not a separate lecture). 4 similar-looking hepatobiliary items (primary biliary
+//    cholangitis / autoimmune hepatitis) were checked and correctly left alone — they
+//    are liver-specific autoimmune disease, not in Lec1.
+//  - 5 questions (esophageal varices; esophageal SCC x2; oral pyogenic granuloma x2)
+//    remain tagged Path of GI 1 despite not appearing in Lec1 either — their true home
+//    cannot be confirmed without Lec2/Lec3 slide content, so left flagged rather than
+//    guessed.
 window.QUESTIONS = [
   {
     id: "MCQ-GI2-001",
@@ -293,7 +301,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-033",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "15-year-old girl with RLQ pain and rebound tenderness; appendectomy performed. What is the essential histological criterion for acute appendicitis?",
     options: ["Submucosal lymphoid hyperplasia", "Neutrophilic infiltration into muscularis propria", "Mucosal lymphocytic infiltrate", "Fecalith in lumen", "Subserosal neutrophils"],
     answer: 1,
@@ -374,7 +382,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-044",
     topic: "Pathology of Hepatobiliary & Pancreas",
-    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
+    blueprintGroup: "Path of GI 1",
     stem: "Repeated bouts of mild abdominal pain in chronic alcoholic who died in an accident. Pancreas shows fibrosis, acinar atrophy, and inspissated protein plugs in ducts. Major etiology?",
     options: ["Alcohol abuse", "Gallstones", "Viral infection", "Drug toxicity", "Trauma"],
     answer: 0,
@@ -419,7 +427,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-049",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "True/False: Thai/Asian patients with diverticular disease most commonly develop diverticula in the left-sided colon.",
     options: ["True", "False (Right-sided / cecum & ascending colon is far more common in Asians)"],
     answer: 1,
@@ -707,7 +715,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-085",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "What is the microscopic diagnostic hallmark of acute appendicitis?",
     options: ["Submucosal lymphoid hyperplasia", "Neutrophilic infiltration of the muscularis propria", "Mucosal erosion only"],
     answer: 1,
@@ -815,7 +823,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-097",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "10-year-old child with RLQ pain; normal appendix but an ileal outpouching located 60 cm proximal to the ileocecal valve is identified. Embryological defect?",
     options: ["Failure of gut rotation", "Failure of vitelline (omphalomesenteric) duct to obliterate"],
     answer: 1,
@@ -851,7 +859,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-102",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "25-year-old woman with previous history of ruptured appendectomy presents with abdominal distension and small bowel obstruction. Most likely cause?",
     options: ["Fibrous peritoneal adhesions", "Intussusception", "Diverticulosis"],
     answer: 0,
@@ -860,7 +868,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-103",
     topic: "Pathology of Hepatobiliary & Pancreas",
-    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
+    blueprintGroup: "Path of GI 1",
     stem: "48-year-old female with gallstone disease; CT reveals parenchymal calcification in the pancreas and acute abdominal pain. Laboratory finding?",
     options: ["Decreased ALP", "Increased serum amylase and lipase", "Decreased ALT"],
     answer: 1,
@@ -1256,7 +1264,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-151",
     topic: "Pathology of Hepatobiliary & Pancreas",
-    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
+    blueprintGroup: "Path of GI 1",
     stem: "CT shows diffuse swelling of pancreas with peripancreatic fluid collection. Which laboratory test confirms the diagnosis?",
     options: ["Elevated alkaline phosphatase", "Decreased ALT", "Increased serum amylase and lipase"],
     answer: 2,
@@ -1526,7 +1534,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-186",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "19-year-old with family history has hundreds of tubular adenomas across the colon on colonoscopy. Mutated tumor suppressor gene?",
     options: ["MLH1", "KRAS", "APC", "SMAD4"],
     answer: 2,
@@ -1544,7 +1552,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-188",
     topic: "Pathology of Hepatobiliary & Pancreas",
-    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
+    blueprintGroup: "Path of GI 1",
     stem: "38-year-old female with gallstone disease and acute epigastric pain; CT reveals swelling of pancreas with fluid. Which laboratory test is most significantly elevated?",
     options: ["Serum amylase and lipase", "Hypoglycemia", "Hyperammonemia"],
     answer: 0,
@@ -2291,7 +2299,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-282",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "Meckel diverticulum represents the persistence of which embryonic structure?",
     options: ["Allantois", "Vitelline (omphalomesenteric) duct", "Foregut cyst", "Urachus"],
     answer: 1,
@@ -2309,7 +2317,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-284",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "15-year-old female with RLQ pain and fever; appendectomy performed. Definitive histological diagnostic finding?",
     options: ["Submucosal lymphoid follicles", "Neutrophilic infiltration of the muscularis propria"],
     answer: 1,
@@ -2894,7 +2902,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-356",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "Gross colonic specimen showing inflamed mucosal outpouching through the muscularis propria with peridiverticular fat stranding and suppuration. Diagnosis?",
     options: ["Colonic adenocarcinoma", "Ulcerative colitis", "Acute diverticulitis"],
     answer: 2,
@@ -2912,7 +2920,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-358",
     topic: "Pathology of GI 2",
-    blueprintGroup: "Path of GI 2",
+    blueprintGroup: "Path of GI 1",
     stem: "Polypoid colonic lesion on a stalk; microscopy shows crowded, branching tubular glands lined by hyperchromatic, stratified, elongated nuclei. Diagnosis?",
     options: ["Tubular adenoma of colon (Benign premalignant neoplasm)", "Hyperplastic polyp"],
     answer: 0,
@@ -3128,7 +3136,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-385",
     topic: "Pathology of Hepatobiliary & Pancreas",
-    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
+    blueprintGroup: "Path of GI 1",
     stem: "Pancreatic and peripancreatic adipose tissue showing opaque, chalky-white saponification deposits. Pathological process?",
     options: ["Coagulative necrosis", "Enzymatic fat necrosis in acute pancreatitis", "Caseous necrosis"],
     answer: 1,
@@ -3137,7 +3145,7 @@ window.QUESTIONS = [
   {
     id: "MCQ-GI2-386",
     topic: "Pathology of Hepatobiliary",
-    blueprintGroup: "Pathology of hepatobiliary (lecture+lab, unsplit)",
+    blueprintGroup: "Path of GI 1",
     stem: "Gallbladder specimen showing marked fibrotic wall thickening, mucosal blunting, and intramural Rokitansky-Aschoff sinuses. Diagnosis?",
     options: ["Acute gangrenous cholecystitis", "Chronic cholecystitis with cholelithiasis"],
     answer: 1,
